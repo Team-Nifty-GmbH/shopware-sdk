@@ -1,0 +1,120 @@
+{
+    "errors": [
+        {
+            "status": "404",
+            "code": "FRAMEWORK__RESOURCE_NOT_FOUND",
+            "title": "Not Found",
+            "detail": "The product resource with the following primary key was not found: id(00000000000000000000000000000000)",
+            "meta": {
+                "parameters": {
+                    "type": "product",
+                    "primaryKey": {
+                        "id": "00000000000000000000000000000000"
+                    },
+                    "primaryKeyString": "id(00000000000000000000000000000000)"
+                }
+            },
+            "trace": [
+                {
+                    "file": "/var/www/html/vendor/shopware/core/Framework/Api/Controller/ApiController.php",
+                    "line": 238,
+                    "function": "resourceNotFound",
+                    "class": "Shopware\\Core\\Framework\\Api\\ApiException",
+                    "type": "::"
+                },
+                {
+                    "file": "/var/www/html/vendor/symfony/http-kernel/HttpKernel.php",
+                    "line": 183,
+                    "function": "detail",
+                    "class": "Shopware\\Core\\Framework\\Api\\Controller\\ApiController",
+                    "type": "->"
+                },
+                {
+                    "file": "/var/www/html/vendor/symfony/http-kernel/HttpKernel.php",
+                    "line": 76,
+                    "function": "handleRaw",
+                    "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+                    "type": "->"
+                },
+                {
+                    "file": "/var/www/html/vendor/shopware/core/Framework/Adapter/Kernel/HttpKernel.php",
+                    "line": 72,
+                    "function": "handle",
+                    "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+                    "type": "->"
+                },
+                {
+                    "file": "/var/www/html/vendor/symfony/http-kernel/HttpCache/SubRequestHandler.php",
+                    "line": 86,
+                    "function": "handle",
+                    "class": "Shopware\\Core\\Framework\\Adapter\\Kernel\\HttpKernel",
+                    "type": "->"
+                },
+                {
+                    "file": "/var/www/html/vendor/symfony/http-kernel/HttpCache/HttpCache.php",
+                    "line": 460,
+                    "function": "handle",
+                    "class": "Symfony\\Component\\HttpKernel\\HttpCache\\SubRequestHandler",
+                    "type": "::"
+                },
+                {
+                    "file": "/var/www/html/vendor/symfony/http-kernel/HttpCache/HttpCache.php",
+                    "line": 437,
+                    "function": "forward",
+                    "class": "Symfony\\Component\\HttpKernel\\HttpCache\\HttpCache",
+                    "type": "->"
+                },
+                {
+                    "file": "/var/www/html/vendor/symfony/http-kernel/HttpCache/HttpCache.php",
+                    "line": 335,
+                    "function": "fetch",
+                    "class": "Symfony\\Component\\HttpKernel\\HttpCache\\HttpCache",
+                    "type": "->"
+                },
+                {
+                    "file": "/var/www/html/vendor/symfony/http-kernel/HttpCache/HttpCache.php",
+                    "line": 213,
+                    "function": "lookup",
+                    "class": "Symfony\\Component\\HttpKernel\\HttpCache\\HttpCache",
+                    "type": "->"
+                },
+                {
+                    "file": "/var/www/html/vendor/shopware/core/Framework/Adapter/Kernel/HttpCacheKernel.php",
+                    "line": 65,
+                    "function": "handle",
+                    "class": "Symfony\\Component\\HttpKernel\\HttpCache\\HttpCache",
+                    "type": "->"
+                },
+                {
+                    "file": "/var/www/html/vendor/shopware/core/Kernel.php",
+                    "line": 148,
+                    "function": "handle",
+                    "class": "Shopware\\Core\\Framework\\Adapter\\Kernel\\HttpCacheKernel",
+                    "type": "->"
+                },
+                {
+                    "file": "/var/www/html/vendor/symfony/runtime/Runner/Symfony/HttpKernelRunner.php",
+                    "line": 35,
+                    "function": "handle",
+                    "class": "Shopware\\Core\\Kernel",
+                    "type": "->"
+                },
+                {
+                    "file": "/var/www/html/vendor/autoload_runtime.php",
+                    "line": 29,
+                    "function": "run",
+                    "class": "Symfony\\Component\\Runtime\\Runner\\Symfony\\HttpKernelRunner",
+                    "type": "->"
+                },
+                {
+                    "file": "/var/www/html/public/index.php",
+                    "line": 10,
+                    "args": [
+                        "/var/www/html/vendor/autoload_runtime.php"
+                    ],
+                    "function": "require_once"
+                }
+            ]
+        }
+    ]
+}

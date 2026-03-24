@@ -1,0 +1,43 @@
+{
+    "data": {
+        "id": "0193211f74b37001992c7534d698caf5",
+        "type": "tax",
+        "attributes": {
+            "taxRate": 0.0,
+            "name": "Reduced rate 2",
+            "position": 3,
+            "customFields": null,
+            "createdAt": "2024-11-12T16:05:29.907+00:00",
+            "updatedAt": null,
+            "apiAlias": "tax_foreign_keys_extension"
+        },
+        "links": {
+            "self": "http://localhost:8080/api/tax/0193211f74b37001992c7534d698caf5"
+        },
+        "relationships": {
+            "products": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/tax/0193211f74b37001992c7534d698caf5/products"
+                }
+            },
+            "rules": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/tax/0193211f74b37001992c7534d698caf5/rules"
+                }
+            },
+            "shippingMethods": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/tax/0193211f74b37001992c7534d698caf5/shipping-methods"
+                }
+            }
+        },
+        "meta": null
+    },
+    "included": [],
+    "links": {
+        "self": "http://localhost:8080/api/tax/0193211f74b37001992c7534d698caf5"
+    }
+}

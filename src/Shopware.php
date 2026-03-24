@@ -967,9 +967,9 @@ class Shopware extends Connector implements HasPagination
         {
             protected function isLastPage(Response $response): bool
             {
-                $total = $response->json('total');
+                $total = $response->json('meta.total') ?? $response->json('total') ?? 0;
                 $limit = $response->json('limit') ?? 25;
-                $page = $response->json('page') ?? 1;
+                $page = $response->json('page') ?? $this->currentPage;
 
                 return ($page * $limit) >= $total;
             }

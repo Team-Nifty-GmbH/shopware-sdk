@@ -1,0 +1,1480 @@
+{
+    "data": [
+        {
+            "id": "019321209b0872ad8a947e66205ea267",
+            "type": "product",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "43a23e0c03bf4ceabc6055a2185faa87",
+                "parentVersionId": null,
+                "manufacturerId": null,
+                "productManufacturerVersionId": null,
+                "unitId": null,
+                "taxId": null,
+                "coverId": null,
+                "productMediaVersionId": null,
+                "deliveryTimeId": null,
+                "featureSetId": null,
+                "canonicalProductId": null,
+                "canonicalProductVersionId": null,
+                "cmsPageId": "7a6d253a67204037966f42b0119704d5",
+                "cmsPageVersionId": null,
+                "price": null,
+                "productNumber": "SWDEMO10005.1",
+                "restockTime": null,
+                "autoIncrement": 6,
+                "active": null,
+                "available": true,
+                "isCloseout": null,
+                "availableStock": 50,
+                "stock": 50,
+                "variation": [],
+                "displayGroup": "d88fdc25bf3013e9cc57d679009b77a0",
+                "variantListingConfig": null,
+                "variantRestrictions": null,
+                "manufacturerNumber": null,
+                "ean": null,
+                "purchaseSteps": null,
+                "maxPurchase": null,
+                "minPurchase": null,
+                "purchaseUnit": null,
+                "referenceUnit": null,
+                "shippingFree": null,
+                "purchasePrices": null,
+                "markAsTopseller": null,
+                "weight": null,
+                "width": null,
+                "height": null,
+                "length": null,
+                "releaseDate": null,
+                "ratingAverage": null,
+                "categoryTree": [
+                    "0193211f2a0a70c39cd22adda647c3f7",
+                    "a515ae260223466f8e37471d279e6406",
+                    "8de9b484c54f441c894774e5f57e485c"
+                ],
+                "propertyIds": [
+                    "5997d91dc0784997bdef68dfc5a08912",
+                    "7cab88165ae5420f921232511b6e8f7d",
+                    "96638a1c7ab847bbb3ca64167ab30a3e",
+                    "acfd7586d02848f1ac801f4776efa414"
+                ],
+                "optionIds": [
+                    "2bfd278e87204807a890da4a3e81dd90",
+                    "5997d91dc0784997bdef68dfc5a08912"
+                ],
+                "streamIds": null,
+                "tagIds": null,
+                "categoryIds": [
+                    "8de9b484c54f441c894774e5f57e485c"
+                ],
+                "childCount": null,
+                "customFieldSetSelectionActive": null,
+                "sales": 0,
+                "states": [
+                    "is-physical"
+                ],
+                "metaDescription": null,
+                "name": null,
+                "keywords": null,
+                "description": null,
+                "metaTitle": null,
+                "packUnit": null,
+                "packUnitPlural": null,
+                "customFields": null,
+                "slotConfig": null,
+                "customSearchKeywords": null,
+                "createdAt": "2024-11-12T16:06:45.304+00:00",
+                "updatedAt": "2024-11-12T16:07:30.723+00:00",
+                "translated": {
+                    "metaDescription": null,
+                    "name": null,
+                    "keywords": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "packUnit": null,
+                    "packUnitPlural": null,
+                    "customFields": {},
+                    "slotConfig": null,
+                    "customSearchKeywords": null
+                },
+                "apiAlias": "product_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267"
+            },
+            "relationships": {
+                "downloads": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/downloads"
+                    }
+                },
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/children"
+                    }
+                },
+                "deliveryTime": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/delivery-time"
+                    }
+                },
+                "tax": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/tax"
+                    }
+                },
+                "manufacturer": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/manufacturer"
+                    }
+                },
+                "unit": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/unit"
+                    }
+                },
+                "cover": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/cover"
+                    }
+                },
+                "featureSet": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/feature-set"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/cms-page"
+                    }
+                },
+                "canonicalProduct": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/canonical-product"
+                    }
+                },
+                "prices": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/prices"
+                    }
+                },
+                "media": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/media"
+                    }
+                },
+                "crossSellings": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/cross-sellings"
+                    }
+                },
+                "crossSellingAssignedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/cross-selling-assigned-products"
+                    }
+                },
+                "configuratorSettings": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/configurator-settings"
+                    }
+                },
+                "visibilities": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/visibilities"
+                    }
+                },
+                "searchKeywords": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/search-keywords"
+                    }
+                },
+                "productReviews": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/product-reviews"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/seo-urls"
+                    }
+                },
+                "orderLineItems": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/order-line-items"
+                    }
+                },
+                "wishlists": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/wishlists"
+                    }
+                },
+                "options": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/options"
+                    }
+                },
+                "properties": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/properties"
+                    }
+                },
+                "categories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/categories"
+                    }
+                },
+                "streams": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/streams"
+                    }
+                },
+                "categoriesRo": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/categories-ro"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/tags"
+                    }
+                },
+                "customFieldSets": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/custom-field-sets"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66205ea267/translations"
+                    }
+                }
+            },
+            "meta": null
+        },
+        {
+            "id": "019321209b0872ad8a947e6620c7342f",
+            "type": "product",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "43a23e0c03bf4ceabc6055a2185faa87",
+                "parentVersionId": null,
+                "manufacturerId": null,
+                "productManufacturerVersionId": null,
+                "unitId": null,
+                "taxId": null,
+                "coverId": null,
+                "productMediaVersionId": null,
+                "deliveryTimeId": null,
+                "featureSetId": null,
+                "canonicalProductId": null,
+                "canonicalProductVersionId": null,
+                "cmsPageId": "7a6d253a67204037966f42b0119704d5",
+                "cmsPageVersionId": null,
+                "price": null,
+                "productNumber": "SWDEMO10005.2",
+                "restockTime": null,
+                "autoIncrement": 7,
+                "active": null,
+                "available": true,
+                "isCloseout": null,
+                "availableStock": 50,
+                "stock": 50,
+                "variation": [],
+                "displayGroup": "d88fdc25bf3013e9cc57d679009b77a0",
+                "variantListingConfig": null,
+                "variantRestrictions": null,
+                "manufacturerNumber": null,
+                "ean": null,
+                "purchaseSteps": null,
+                "maxPurchase": null,
+                "minPurchase": null,
+                "purchaseUnit": null,
+                "referenceUnit": null,
+                "shippingFree": null,
+                "purchasePrices": null,
+                "markAsTopseller": null,
+                "weight": null,
+                "width": null,
+                "height": null,
+                "length": null,
+                "releaseDate": null,
+                "ratingAverage": null,
+                "categoryTree": [
+                    "0193211f2a0a70c39cd22adda647c3f7",
+                    "a515ae260223466f8e37471d279e6406",
+                    "8de9b484c54f441c894774e5f57e485c"
+                ],
+                "propertyIds": [
+                    "5997d91dc0784997bdef68dfc5a08912",
+                    "7cab88165ae5420f921232511b6e8f7d",
+                    "96638a1c7ab847bbb3ca64167ab30a3e",
+                    "acfd7586d02848f1ac801f4776efa414"
+                ],
+                "optionIds": [
+                    "2bfd278e87204807a890da4a3e81dd90",
+                    "acfd7586d02848f1ac801f4776efa414"
+                ],
+                "streamIds": null,
+                "tagIds": null,
+                "categoryIds": [
+                    "8de9b484c54f441c894774e5f57e485c"
+                ],
+                "childCount": null,
+                "customFieldSetSelectionActive": null,
+                "sales": 0,
+                "states": [
+                    "is-physical"
+                ],
+                "metaDescription": null,
+                "name": null,
+                "keywords": null,
+                "description": null,
+                "metaTitle": null,
+                "packUnit": null,
+                "packUnitPlural": null,
+                "customFields": null,
+                "slotConfig": null,
+                "customSearchKeywords": null,
+                "createdAt": "2024-11-12T16:06:45.305+00:00",
+                "updatedAt": "2024-11-12T16:07:30.723+00:00",
+                "translated": {
+                    "metaDescription": null,
+                    "name": null,
+                    "keywords": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "packUnit": null,
+                    "packUnitPlural": null,
+                    "customFields": {},
+                    "slotConfig": null,
+                    "customSearchKeywords": null
+                },
+                "apiAlias": "product_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f"
+            },
+            "relationships": {
+                "downloads": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/downloads"
+                    }
+                },
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/children"
+                    }
+                },
+                "deliveryTime": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/delivery-time"
+                    }
+                },
+                "tax": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/tax"
+                    }
+                },
+                "manufacturer": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/manufacturer"
+                    }
+                },
+                "unit": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/unit"
+                    }
+                },
+                "cover": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/cover"
+                    }
+                },
+                "featureSet": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/feature-set"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/cms-page"
+                    }
+                },
+                "canonicalProduct": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/canonical-product"
+                    }
+                },
+                "prices": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/prices"
+                    }
+                },
+                "media": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/media"
+                    }
+                },
+                "crossSellings": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/cross-sellings"
+                    }
+                },
+                "crossSellingAssignedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/cross-selling-assigned-products"
+                    }
+                },
+                "configuratorSettings": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/configurator-settings"
+                    }
+                },
+                "visibilities": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/visibilities"
+                    }
+                },
+                "searchKeywords": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/search-keywords"
+                    }
+                },
+                "productReviews": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/product-reviews"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/seo-urls"
+                    }
+                },
+                "orderLineItems": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/order-line-items"
+                    }
+                },
+                "wishlists": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/wishlists"
+                    }
+                },
+                "options": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/options"
+                    }
+                },
+                "properties": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/properties"
+                    }
+                },
+                "categories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/categories"
+                    }
+                },
+                "streams": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/streams"
+                    }
+                },
+                "categoriesRo": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/categories-ro"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/tags"
+                    }
+                },
+                "customFieldSets": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/custom-field-sets"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6620c7342f/translations"
+                    }
+                }
+            },
+            "meta": null
+        },
+        {
+            "id": "019321209b0872ad8a947e662111ce7c",
+            "type": "product",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "43a23e0c03bf4ceabc6055a2185faa87",
+                "parentVersionId": null,
+                "manufacturerId": null,
+                "productManufacturerVersionId": null,
+                "unitId": null,
+                "taxId": null,
+                "coverId": null,
+                "productMediaVersionId": null,
+                "deliveryTimeId": null,
+                "featureSetId": null,
+                "canonicalProductId": null,
+                "canonicalProductVersionId": null,
+                "cmsPageId": "7a6d253a67204037966f42b0119704d5",
+                "cmsPageVersionId": null,
+                "price": null,
+                "productNumber": "SWDEMO10005.3",
+                "restockTime": null,
+                "autoIncrement": 8,
+                "active": null,
+                "available": true,
+                "isCloseout": null,
+                "availableStock": 50,
+                "stock": 50,
+                "variation": [],
+                "displayGroup": "d88fdc25bf3013e9cc57d679009b77a0",
+                "variantListingConfig": null,
+                "variantRestrictions": null,
+                "manufacturerNumber": null,
+                "ean": null,
+                "purchaseSteps": null,
+                "maxPurchase": null,
+                "minPurchase": null,
+                "purchaseUnit": null,
+                "referenceUnit": null,
+                "shippingFree": null,
+                "purchasePrices": null,
+                "markAsTopseller": null,
+                "weight": null,
+                "width": null,
+                "height": null,
+                "length": null,
+                "releaseDate": null,
+                "ratingAverage": null,
+                "categoryTree": [
+                    "0193211f2a0a70c39cd22adda647c3f7",
+                    "a515ae260223466f8e37471d279e6406",
+                    "8de9b484c54f441c894774e5f57e485c"
+                ],
+                "propertyIds": [
+                    "5997d91dc0784997bdef68dfc5a08912",
+                    "7cab88165ae5420f921232511b6e8f7d",
+                    "96638a1c7ab847bbb3ca64167ab30a3e",
+                    "acfd7586d02848f1ac801f4776efa414"
+                ],
+                "optionIds": [
+                    "52454db2adf942b2ac079a296f454a10",
+                    "5997d91dc0784997bdef68dfc5a08912"
+                ],
+                "streamIds": null,
+                "tagIds": null,
+                "categoryIds": [
+                    "8de9b484c54f441c894774e5f57e485c"
+                ],
+                "childCount": null,
+                "customFieldSetSelectionActive": null,
+                "sales": 0,
+                "states": [
+                    "is-physical"
+                ],
+                "metaDescription": null,
+                "name": null,
+                "keywords": null,
+                "description": null,
+                "metaTitle": null,
+                "packUnit": null,
+                "packUnitPlural": null,
+                "customFields": null,
+                "slotConfig": null,
+                "customSearchKeywords": null,
+                "createdAt": "2024-11-12T16:06:45.306+00:00",
+                "updatedAt": "2024-11-12T16:07:30.723+00:00",
+                "translated": {
+                    "metaDescription": null,
+                    "name": null,
+                    "keywords": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "packUnit": null,
+                    "packUnitPlural": null,
+                    "customFields": {},
+                    "slotConfig": null,
+                    "customSearchKeywords": null
+                },
+                "apiAlias": "product_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c"
+            },
+            "relationships": {
+                "downloads": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/downloads"
+                    }
+                },
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/children"
+                    }
+                },
+                "deliveryTime": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/delivery-time"
+                    }
+                },
+                "tax": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/tax"
+                    }
+                },
+                "manufacturer": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/manufacturer"
+                    }
+                },
+                "unit": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/unit"
+                    }
+                },
+                "cover": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/cover"
+                    }
+                },
+                "featureSet": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/feature-set"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/cms-page"
+                    }
+                },
+                "canonicalProduct": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/canonical-product"
+                    }
+                },
+                "prices": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/prices"
+                    }
+                },
+                "media": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/media"
+                    }
+                },
+                "crossSellings": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/cross-sellings"
+                    }
+                },
+                "crossSellingAssignedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/cross-selling-assigned-products"
+                    }
+                },
+                "configuratorSettings": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/configurator-settings"
+                    }
+                },
+                "visibilities": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/visibilities"
+                    }
+                },
+                "searchKeywords": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/search-keywords"
+                    }
+                },
+                "productReviews": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/product-reviews"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/seo-urls"
+                    }
+                },
+                "orderLineItems": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/order-line-items"
+                    }
+                },
+                "wishlists": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/wishlists"
+                    }
+                },
+                "options": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/options"
+                    }
+                },
+                "properties": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/properties"
+                    }
+                },
+                "categories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/categories"
+                    }
+                },
+                "streams": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/streams"
+                    }
+                },
+                "categoriesRo": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/categories-ro"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/tags"
+                    }
+                },
+                "customFieldSets": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/custom-field-sets"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e662111ce7c/translations"
+                    }
+                }
+            },
+            "meta": null
+        },
+        {
+            "id": "019321209b0872ad8a947e66215c8cd4",
+            "type": "product",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "43a23e0c03bf4ceabc6055a2185faa87",
+                "parentVersionId": null,
+                "manufacturerId": null,
+                "productManufacturerVersionId": null,
+                "unitId": null,
+                "taxId": null,
+                "coverId": null,
+                "productMediaVersionId": null,
+                "deliveryTimeId": null,
+                "featureSetId": null,
+                "canonicalProductId": null,
+                "canonicalProductVersionId": null,
+                "cmsPageId": "7a6d253a67204037966f42b0119704d5",
+                "cmsPageVersionId": null,
+                "price": null,
+                "productNumber": "SWDEMO10005.4",
+                "restockTime": null,
+                "autoIncrement": 9,
+                "active": null,
+                "available": true,
+                "isCloseout": null,
+                "availableStock": 50,
+                "stock": 50,
+                "variation": [],
+                "displayGroup": "d88fdc25bf3013e9cc57d679009b77a0",
+                "variantListingConfig": null,
+                "variantRestrictions": null,
+                "manufacturerNumber": null,
+                "ean": null,
+                "purchaseSteps": null,
+                "maxPurchase": null,
+                "minPurchase": null,
+                "purchaseUnit": null,
+                "referenceUnit": null,
+                "shippingFree": null,
+                "purchasePrices": null,
+                "markAsTopseller": null,
+                "weight": null,
+                "width": null,
+                "height": null,
+                "length": null,
+                "releaseDate": null,
+                "ratingAverage": null,
+                "categoryTree": [
+                    "0193211f2a0a70c39cd22adda647c3f7",
+                    "a515ae260223466f8e37471d279e6406",
+                    "8de9b484c54f441c894774e5f57e485c"
+                ],
+                "propertyIds": [
+                    "5997d91dc0784997bdef68dfc5a08912",
+                    "7cab88165ae5420f921232511b6e8f7d",
+                    "96638a1c7ab847bbb3ca64167ab30a3e",
+                    "acfd7586d02848f1ac801f4776efa414"
+                ],
+                "optionIds": [
+                    "52454db2adf942b2ac079a296f454a10",
+                    "acfd7586d02848f1ac801f4776efa414"
+                ],
+                "streamIds": null,
+                "tagIds": null,
+                "categoryIds": [
+                    "8de9b484c54f441c894774e5f57e485c"
+                ],
+                "childCount": null,
+                "customFieldSetSelectionActive": null,
+                "sales": 0,
+                "states": [
+                    "is-physical"
+                ],
+                "metaDescription": null,
+                "name": null,
+                "keywords": null,
+                "description": null,
+                "metaTitle": null,
+                "packUnit": null,
+                "packUnitPlural": null,
+                "customFields": null,
+                "slotConfig": null,
+                "customSearchKeywords": null,
+                "createdAt": "2024-11-12T16:06:45.307+00:00",
+                "updatedAt": "2024-11-12T16:07:30.723+00:00",
+                "translated": {
+                    "metaDescription": null,
+                    "name": null,
+                    "keywords": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "packUnit": null,
+                    "packUnitPlural": null,
+                    "customFields": {},
+                    "slotConfig": null,
+                    "customSearchKeywords": null
+                },
+                "apiAlias": "product_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4"
+            },
+            "relationships": {
+                "downloads": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/downloads"
+                    }
+                },
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/children"
+                    }
+                },
+                "deliveryTime": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/delivery-time"
+                    }
+                },
+                "tax": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/tax"
+                    }
+                },
+                "manufacturer": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/manufacturer"
+                    }
+                },
+                "unit": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/unit"
+                    }
+                },
+                "cover": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/cover"
+                    }
+                },
+                "featureSet": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/feature-set"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/cms-page"
+                    }
+                },
+                "canonicalProduct": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/canonical-product"
+                    }
+                },
+                "prices": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/prices"
+                    }
+                },
+                "media": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/media"
+                    }
+                },
+                "crossSellings": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/cross-sellings"
+                    }
+                },
+                "crossSellingAssignedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/cross-selling-assigned-products"
+                    }
+                },
+                "configuratorSettings": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/configurator-settings"
+                    }
+                },
+                "visibilities": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/visibilities"
+                    }
+                },
+                "searchKeywords": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/search-keywords"
+                    }
+                },
+                "productReviews": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/product-reviews"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/seo-urls"
+                    }
+                },
+                "orderLineItems": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/order-line-items"
+                    }
+                },
+                "wishlists": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/wishlists"
+                    }
+                },
+                "options": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/options"
+                    }
+                },
+                "properties": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/properties"
+                    }
+                },
+                "categories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/categories"
+                    }
+                },
+                "streams": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/streams"
+                    }
+                },
+                "categoriesRo": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/categories-ro"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/tags"
+                    }
+                },
+                "customFieldSets": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/custom-field-sets"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e66215c8cd4/translations"
+                    }
+                }
+            },
+            "meta": null
+        },
+        {
+            "id": "019321209b0872ad8a947e6621c97fed",
+            "type": "product",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "43a23e0c03bf4ceabc6055a2185faa87",
+                "parentVersionId": null,
+                "manufacturerId": null,
+                "productManufacturerVersionId": null,
+                "unitId": null,
+                "taxId": null,
+                "coverId": null,
+                "productMediaVersionId": null,
+                "deliveryTimeId": null,
+                "featureSetId": null,
+                "canonicalProductId": null,
+                "canonicalProductVersionId": null,
+                "cmsPageId": "7a6d253a67204037966f42b0119704d5",
+                "cmsPageVersionId": null,
+                "price": null,
+                "productNumber": "SWDEMO10005.5",
+                "restockTime": null,
+                "autoIncrement": 10,
+                "active": null,
+                "available": true,
+                "isCloseout": null,
+                "availableStock": 50,
+                "stock": 50,
+                "variation": [],
+                "displayGroup": "d88fdc25bf3013e9cc57d679009b77a0",
+                "variantListingConfig": null,
+                "variantRestrictions": null,
+                "manufacturerNumber": null,
+                "ean": null,
+                "purchaseSteps": null,
+                "maxPurchase": null,
+                "minPurchase": null,
+                "purchaseUnit": null,
+                "referenceUnit": null,
+                "shippingFree": null,
+                "purchasePrices": null,
+                "markAsTopseller": null,
+                "weight": null,
+                "width": null,
+                "height": null,
+                "length": null,
+                "releaseDate": null,
+                "ratingAverage": null,
+                "categoryTree": [
+                    "0193211f2a0a70c39cd22adda647c3f7",
+                    "a515ae260223466f8e37471d279e6406",
+                    "8de9b484c54f441c894774e5f57e485c"
+                ],
+                "propertyIds": [
+                    "5997d91dc0784997bdef68dfc5a08912",
+                    "7cab88165ae5420f921232511b6e8f7d",
+                    "96638a1c7ab847bbb3ca64167ab30a3e",
+                    "acfd7586d02848f1ac801f4776efa414"
+                ],
+                "optionIds": [
+                    "5997d91dc0784997bdef68dfc5a08912",
+                    "ad735af1ebfb421e93e408b073c4a89a"
+                ],
+                "streamIds": null,
+                "tagIds": null,
+                "categoryIds": [
+                    "8de9b484c54f441c894774e5f57e485c"
+                ],
+                "childCount": null,
+                "customFieldSetSelectionActive": null,
+                "sales": 0,
+                "states": [
+                    "is-physical"
+                ],
+                "metaDescription": null,
+                "name": null,
+                "keywords": null,
+                "description": null,
+                "metaTitle": null,
+                "packUnit": null,
+                "packUnitPlural": null,
+                "customFields": null,
+                "slotConfig": null,
+                "customSearchKeywords": null,
+                "createdAt": "2024-11-12T16:06:45.308+00:00",
+                "updatedAt": "2024-11-12T16:07:30.723+00:00",
+                "translated": {
+                    "metaDescription": null,
+                    "name": null,
+                    "keywords": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "packUnit": null,
+                    "packUnitPlural": null,
+                    "customFields": {},
+                    "slotConfig": null,
+                    "customSearchKeywords": null
+                },
+                "apiAlias": "product_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed"
+            },
+            "relationships": {
+                "downloads": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/downloads"
+                    }
+                },
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/children"
+                    }
+                },
+                "deliveryTime": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/delivery-time"
+                    }
+                },
+                "tax": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/tax"
+                    }
+                },
+                "manufacturer": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/manufacturer"
+                    }
+                },
+                "unit": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/unit"
+                    }
+                },
+                "cover": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/cover"
+                    }
+                },
+                "featureSet": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/feature-set"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/cms-page"
+                    }
+                },
+                "canonicalProduct": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/canonical-product"
+                    }
+                },
+                "prices": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/prices"
+                    }
+                },
+                "media": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/media"
+                    }
+                },
+                "crossSellings": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/cross-sellings"
+                    }
+                },
+                "crossSellingAssignedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/cross-selling-assigned-products"
+                    }
+                },
+                "configuratorSettings": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/configurator-settings"
+                    }
+                },
+                "visibilities": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/visibilities"
+                    }
+                },
+                "searchKeywords": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/search-keywords"
+                    }
+                },
+                "productReviews": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/product-reviews"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/seo-urls"
+                    }
+                },
+                "orderLineItems": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/order-line-items"
+                    }
+                },
+                "wishlists": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/wishlists"
+                    }
+                },
+                "options": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/options"
+                    }
+                },
+                "properties": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/properties"
+                    }
+                },
+                "categories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/categories"
+                    }
+                },
+                "streams": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/streams"
+                    }
+                },
+                "categoriesRo": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/categories-ro"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/tags"
+                    }
+                },
+                "customFieldSets": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/custom-field-sets"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/product/019321209b0872ad8a947e6621c97fed/translations"
+                    }
+                }
+            },
+            "meta": null
+        }
+    ],
+    "included": [],
+    "links": {
+        "first": "http://localhost:8080/api/product?limit=5&page=1",
+        "next": "http://localhost:8080/api/product?limit=5&page=2",
+        "self": "http://localhost:8080/api/product?limit=5"
+    },
+    "meta": {
+        "totalCountMode": 0,
+        "total": 5
+    },
+    "aggregations": []
+}

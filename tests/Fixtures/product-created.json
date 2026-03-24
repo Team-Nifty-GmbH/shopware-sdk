@@ -1,0 +1,337 @@
+{
+    "data": {
+        "id": "019d1f019ec572db9f03cb5684a4f0fb",
+        "type": "product",
+        "attributes": {
+            "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+            "parentId": null,
+            "parentVersionId": null,
+            "manufacturerId": null,
+            "productManufacturerVersionId": null,
+            "unitId": null,
+            "taxId": "0193211f74b37001992c7534d698caf5",
+            "coverId": null,
+            "productMediaVersionId": null,
+            "deliveryTimeId": null,
+            "featureSetId": null,
+            "canonicalProductId": null,
+            "canonicalProductVersionId": null,
+            "cmsPageId": "7a6d253a67204037966f42b0119704d5",
+            "cmsPageVersionId": null,
+            "price": [
+                {
+                    "extensions": [],
+                    "currencyId": "b7d2554b0ce847cd82f3ac9bd1c0dfca",
+                    "net": 16.8,
+                    "gross": 19.99,
+                    "linked": true,
+                    "listPrice": null,
+                    "percentage": null,
+                    "regulationPrice": null
+                }
+            ],
+            "productNumber": "SDK-FIXTURE-004",
+            "restockTime": null,
+            "autoIncrement": 17,
+            "active": true,
+            "available": true,
+            "isCloseout": false,
+            "availableStock": 42,
+            "stock": 42,
+            "variation": [],
+            "displayGroup": "3cc73b4f2e58ff07ee2a16e26cae66c0",
+            "variantListingConfig": null,
+            "variantRestrictions": null,
+            "manufacturerNumber": null,
+            "ean": null,
+            "purchaseSteps": 1,
+            "maxPurchase": null,
+            "minPurchase": 1,
+            "purchaseUnit": null,
+            "referenceUnit": null,
+            "shippingFree": false,
+            "purchasePrices": null,
+            "markAsTopseller": false,
+            "weight": null,
+            "width": null,
+            "height": null,
+            "length": null,
+            "releaseDate": null,
+            "ratingAverage": null,
+            "categoryTree": null,
+            "propertyIds": null,
+            "optionIds": null,
+            "streamIds": null,
+            "tagIds": null,
+            "categoryIds": null,
+            "childCount": 0,
+            "customFieldSetSelectionActive": null,
+            "sales": 0,
+            "states": [
+                "is-physical"
+            ],
+            "metaDescription": null,
+            "name": "SDK Test Fixture Product",
+            "keywords": null,
+            "description": null,
+            "metaTitle": null,
+            "packUnit": null,
+            "packUnitPlural": null,
+            "customFields": null,
+            "slotConfig": null,
+            "customSearchKeywords": null,
+            "createdAt": "2026-03-24T08:41:33.126+00:00",
+            "updatedAt": "2026-03-24T08:41:33.251+00:00",
+            "translated": {
+                "metaDescription": null,
+                "name": "SDK Test Fixture Product",
+                "keywords": null,
+                "description": null,
+                "metaTitle": null,
+                "packUnit": null,
+                "packUnitPlural": null,
+                "customFields": {},
+                "slotConfig": null,
+                "customSearchKeywords": null
+            },
+            "apiAlias": "product_foreign_keys_extension"
+        },
+        "links": {
+            "self": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb"
+        },
+        "relationships": {
+            "downloads": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/downloads"
+                }
+            },
+            "parent": {
+                "data": null,
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/parent"
+                }
+            },
+            "children": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/children"
+                }
+            },
+            "deliveryTime": {
+                "data": null,
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/delivery-time"
+                }
+            },
+            "tax": {
+                "data": {
+                    "type": "tax",
+                    "id": "0193211f74b37001992c7534d698caf5"
+                },
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/tax"
+                }
+            },
+            "manufacturer": {
+                "data": null,
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/manufacturer"
+                }
+            },
+            "unit": {
+                "data": null,
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/unit"
+                }
+            },
+            "cover": {
+                "data": null,
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/cover"
+                }
+            },
+            "featureSet": {
+                "data": null,
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/feature-set"
+                }
+            },
+            "cmsPage": {
+                "data": null,
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/cms-page"
+                }
+            },
+            "canonicalProduct": {
+                "data": null,
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/canonical-product"
+                }
+            },
+            "prices": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/prices"
+                }
+            },
+            "media": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/media"
+                }
+            },
+            "crossSellings": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/cross-sellings"
+                }
+            },
+            "crossSellingAssignedProducts": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/cross-selling-assigned-products"
+                }
+            },
+            "configuratorSettings": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/configurator-settings"
+                }
+            },
+            "visibilities": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/visibilities"
+                }
+            },
+            "searchKeywords": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/search-keywords"
+                }
+            },
+            "productReviews": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/product-reviews"
+                }
+            },
+            "mainCategories": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/main-categories"
+                }
+            },
+            "seoUrls": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/seo-urls"
+                }
+            },
+            "orderLineItems": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/order-line-items"
+                }
+            },
+            "wishlists": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/wishlists"
+                }
+            },
+            "options": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/options"
+                }
+            },
+            "properties": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/properties"
+                }
+            },
+            "categories": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/categories"
+                }
+            },
+            "streams": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/streams"
+                }
+            },
+            "categoriesRo": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/categories-ro"
+                }
+            },
+            "tags": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/tags"
+                }
+            },
+            "customFieldSets": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/custom-field-sets"
+                }
+            },
+            "translations": {
+                "data": [],
+                "links": {
+                    "related": "http://localhost:8080/api/product/019d1f019ec572db9f03cb5684a4f0fb/translations"
+                }
+            }
+        },
+        "meta": null
+    },
+    "included": [
+        {
+            "id": "0193211f74b37001992c7534d698caf5",
+            "type": "tax",
+            "attributes": {
+                "taxRate": 0.0,
+                "name": "Reduced rate 2",
+                "position": 3,
+                "customFields": null,
+                "createdAt": "2024-11-12T16:05:29.907+00:00",
+                "updatedAt": null,
+                "apiAlias": "tax_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/tax/0193211f74b37001992c7534d698caf5"
+            },
+            "relationships": {
+                "products": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/tax/0193211f74b37001992c7534d698caf5/products"
+                    }
+                },
+                "rules": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/tax/0193211f74b37001992c7534d698caf5/rules"
+                    }
+                },
+                "shippingMethods": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/tax/0193211f74b37001992c7534d698caf5/shipping-methods"
+                    }
+                }
+            },
+            "meta": null
+        }
+    ],
+    "links": {
+        "self": "http://localhost:8080/api/product?_response=detail"
+    }
+}

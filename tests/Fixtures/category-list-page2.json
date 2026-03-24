@@ -1,0 +1,14 @@
+{
+    "data": [],
+    "included": [],
+    "links": {
+        "first": "http://localhost:8080/api/category?limit=2&page=1",
+        "prev": "http://localhost:8080/api/category?limit=2&page=998",
+        "self": "http://localhost:8080/api/category?limit=2&page=999"
+    },
+    "meta": {
+        "totalCountMode": 0,
+        "total": 0
+    },
+    "aggregations": []
+}

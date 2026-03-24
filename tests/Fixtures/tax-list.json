@@ -1,0 +1,11 @@
+{
+    "total": 3,
+    "data": [
+        {"id": "1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d", "taxRate": 19.0, "name": "Standard rate", "createdAt": "2024-01-01T00:00:00+00:00", "updatedAt": null},
+        {"id": "2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e", "taxRate": 7.0, "name": "Reduced rate", "createdAt": "2024-01-01T00:00:00+00:00", "updatedAt": null},
+        {"id": "3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f", "taxRate": 0.0, "name": "Tax free", "createdAt": "2024-01-01T00:00:00+00:00", "updatedAt": null}
+    ],
+    "aggregations": [],
+    "page": 1,
+    "limit": 25
+}

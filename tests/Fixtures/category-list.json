@@ -1,0 +1,1390 @@
+{
+    "data": [
+        {
+            "id": "0193211f2a0a70c39cd22adda647c3f7",
+            "type": "category",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": null,
+                "parentVersionId": null,
+                "afterCategoryId": null,
+                "afterCategoryVersionId": null,
+                "mediaId": null,
+                "displayNestedProducts": true,
+                "autoIncrement": 1,
+                "breadcrumb": [
+                    "Catalogue #1"
+                ],
+                "level": 1,
+                "path": null,
+                "childCount": 3,
+                "type": "page",
+                "productAssignmentType": "product",
+                "visible": true,
+                "active": true,
+                "cmsPageIdSwitched": false,
+                "visibleChildCount": 0,
+                "name": "Catalogue #1",
+                "customFields": null,
+                "slotConfig": null,
+                "linkType": null,
+                "internalLink": null,
+                "externalLink": null,
+                "linkNewTab": null,
+                "description": null,
+                "metaTitle": null,
+                "metaDescription": null,
+                "keywords": null,
+                "cmsPageId": "695477e02ef643e5a016b83ed4cdf63a",
+                "cmsPageVersionId": null,
+                "productStreamId": null,
+                "customEntityTypeId": null,
+                "createdAt": "2024-11-12T16:05:10.794+00:00",
+                "updatedAt": "2024-11-12T16:06:44.310+00:00",
+                "translated": {
+                    "breadcrumb": [
+                        "Catalogue #1"
+                    ],
+                    "name": "Catalogue #1",
+                    "customFields": {},
+                    "slotConfig": null,
+                    "linkType": null,
+                    "internalLink": null,
+                    "externalLink": null,
+                    "linkNewTab": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "metaDescription": null,
+                    "keywords": null
+                },
+                "apiAlias": "category_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7"
+            },
+            "relationships": {
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/children"
+                    }
+                },
+                "media": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/media"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/translations"
+                    }
+                },
+                "products": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/products"
+                    }
+                },
+                "nestedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/nested-products"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/tags"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/cms-page"
+                    }
+                },
+                "productStream": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/product-stream"
+                    }
+                },
+                "navigationSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/navigation-sales-channels"
+                    }
+                },
+                "footerSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/footer-sales-channels"
+                    }
+                },
+                "serviceSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/service-sales-channels"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/0193211f2a0a70c39cd22adda647c3f7/seo-urls"
+                    }
+                }
+            },
+            "meta": null
+        },
+        {
+            "id": "77b959cf66de4c1590c7f9b7da3982f3",
+            "type": "category",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "0193211f2a0a70c39cd22adda647c3f7",
+                "parentVersionId": null,
+                "afterCategoryId": null,
+                "afterCategoryVersionId": null,
+                "mediaId": null,
+                "displayNestedProducts": true,
+                "autoIncrement": 2,
+                "breadcrumb": [
+                    "Catalogue #1",
+                    "Food"
+                ],
+                "level": 2,
+                "path": "|0193211f2a0a70c39cd22adda647c3f7|",
+                "childCount": 3,
+                "type": "page",
+                "productAssignmentType": "product",
+                "visible": true,
+                "active": false,
+                "cmsPageIdSwitched": false,
+                "visibleChildCount": 0,
+                "name": "Food",
+                "customFields": null,
+                "slotConfig": null,
+                "linkType": null,
+                "internalLink": null,
+                "externalLink": null,
+                "linkNewTab": null,
+                "description": null,
+                "metaTitle": null,
+                "metaDescription": null,
+                "keywords": null,
+                "cmsPageId": "0193211f2fe97271a1bcb57c190cfb5f",
+                "cmsPageVersionId": null,
+                "productStreamId": null,
+                "customEntityTypeId": null,
+                "createdAt": "2024-11-12T16:06:44.312+00:00",
+                "updatedAt": null,
+                "translated": {
+                    "breadcrumb": [
+                        "Catalogue #1",
+                        "Food"
+                    ],
+                    "name": "Food",
+                    "customFields": {},
+                    "slotConfig": null,
+                    "linkType": null,
+                    "internalLink": null,
+                    "externalLink": null,
+                    "linkNewTab": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "metaDescription": null,
+                    "keywords": null
+                },
+                "apiAlias": "category_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3"
+            },
+            "relationships": {
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/children"
+                    }
+                },
+                "media": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/media"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/translations"
+                    }
+                },
+                "products": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/products"
+                    }
+                },
+                "nestedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/nested-products"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/tags"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/cms-page"
+                    }
+                },
+                "productStream": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/product-stream"
+                    }
+                },
+                "navigationSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/navigation-sales-channels"
+                    }
+                },
+                "footerSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/footer-sales-channels"
+                    }
+                },
+                "serviceSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/service-sales-channels"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/77b959cf66de4c1590c7f9b7da3982f3/seo-urls"
+                    }
+                }
+            },
+            "meta": null
+        },
+        {
+            "id": "19ca405790ff4f07aac8c599d4317868",
+            "type": "category",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "77b959cf66de4c1590c7f9b7da3982f3",
+                "parentVersionId": null,
+                "afterCategoryId": null,
+                "afterCategoryVersionId": null,
+                "mediaId": null,
+                "displayNestedProducts": true,
+                "autoIncrement": 3,
+                "breadcrumb": [
+                    "Catalogue #1",
+                    "Food",
+                    "Bakery products"
+                ],
+                "level": 3,
+                "path": "|0193211f2a0a70c39cd22adda647c3f7|77b959cf66de4c1590c7f9b7da3982f3|",
+                "childCount": 0,
+                "type": "page",
+                "productAssignmentType": "product",
+                "visible": true,
+                "active": true,
+                "cmsPageIdSwitched": false,
+                "visibleChildCount": 0,
+                "name": "Bakery products",
+                "customFields": null,
+                "slotConfig": null,
+                "linkType": null,
+                "internalLink": null,
+                "externalLink": null,
+                "linkNewTab": null,
+                "description": null,
+                "metaTitle": null,
+                "metaDescription": null,
+                "keywords": null,
+                "cmsPageId": "0193211f2fe97271a1bcb57c190cfb5f",
+                "cmsPageVersionId": null,
+                "productStreamId": null,
+                "customEntityTypeId": null,
+                "createdAt": "2024-11-12T16:06:44.314+00:00",
+                "updatedAt": null,
+                "translated": {
+                    "breadcrumb": [
+                        "Catalogue #1",
+                        "Food",
+                        "Bakery products"
+                    ],
+                    "name": "Bakery products",
+                    "customFields": {},
+                    "slotConfig": null,
+                    "linkType": null,
+                    "internalLink": null,
+                    "externalLink": null,
+                    "linkNewTab": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "metaDescription": null,
+                    "keywords": null
+                },
+                "apiAlias": "category_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868"
+            },
+            "relationships": {
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/children"
+                    }
+                },
+                "media": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/media"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/translations"
+                    }
+                },
+                "products": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/products"
+                    }
+                },
+                "nestedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/nested-products"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/tags"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/cms-page"
+                    }
+                },
+                "productStream": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/product-stream"
+                    }
+                },
+                "navigationSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/navigation-sales-channels"
+                    }
+                },
+                "footerSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/footer-sales-channels"
+                    }
+                },
+                "serviceSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/service-sales-channels"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/19ca405790ff4f07aac8c599d4317868/seo-urls"
+                    }
+                }
+            },
+            "meta": null
+        },
+        {
+            "id": "48f97f432fd041388b2630184139cf0e",
+            "type": "category",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "77b959cf66de4c1590c7f9b7da3982f3",
+                "parentVersionId": null,
+                "afterCategoryId": "19ca405790ff4f07aac8c599d4317868",
+                "afterCategoryVersionId": null,
+                "mediaId": null,
+                "displayNestedProducts": true,
+                "autoIncrement": 4,
+                "breadcrumb": [
+                    "Catalogue #1",
+                    "Food",
+                    "Fish"
+                ],
+                "level": 3,
+                "path": "|0193211f2a0a70c39cd22adda647c3f7|77b959cf66de4c1590c7f9b7da3982f3|",
+                "childCount": 0,
+                "type": "page",
+                "productAssignmentType": "product",
+                "visible": true,
+                "active": true,
+                "cmsPageIdSwitched": false,
+                "visibleChildCount": 0,
+                "name": "Fish",
+                "customFields": null,
+                "slotConfig": null,
+                "linkType": null,
+                "internalLink": null,
+                "externalLink": null,
+                "linkNewTab": null,
+                "description": null,
+                "metaTitle": null,
+                "metaDescription": null,
+                "keywords": null,
+                "cmsPageId": "0193211f2fe97271a1bcb57c190cfb5f",
+                "cmsPageVersionId": null,
+                "productStreamId": null,
+                "customEntityTypeId": null,
+                "createdAt": "2024-11-12T16:06:44.315+00:00",
+                "updatedAt": null,
+                "translated": {
+                    "breadcrumb": [
+                        "Catalogue #1",
+                        "Food",
+                        "Fish"
+                    ],
+                    "name": "Fish",
+                    "customFields": {},
+                    "slotConfig": null,
+                    "linkType": null,
+                    "internalLink": null,
+                    "externalLink": null,
+                    "linkNewTab": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "metaDescription": null,
+                    "keywords": null
+                },
+                "apiAlias": "category_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e"
+            },
+            "relationships": {
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/children"
+                    }
+                },
+                "media": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/media"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/translations"
+                    }
+                },
+                "products": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/products"
+                    }
+                },
+                "nestedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/nested-products"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/tags"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/cms-page"
+                    }
+                },
+                "productStream": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/product-stream"
+                    }
+                },
+                "navigationSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/navigation-sales-channels"
+                    }
+                },
+                "footerSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/footer-sales-channels"
+                    }
+                },
+                "serviceSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/service-sales-channels"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/48f97f432fd041388b2630184139cf0e/seo-urls"
+                    }
+                }
+            },
+            "meta": null
+        },
+        {
+            "id": "bb22b05bff9140f3808b1cff975b75eb",
+            "type": "category",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "77b959cf66de4c1590c7f9b7da3982f3",
+                "parentVersionId": null,
+                "afterCategoryId": "48f97f432fd041388b2630184139cf0e",
+                "afterCategoryVersionId": null,
+                "mediaId": null,
+                "displayNestedProducts": true,
+                "autoIncrement": 5,
+                "breadcrumb": [
+                    "Catalogue #1",
+                    "Food",
+                    "Sweets"
+                ],
+                "level": 3,
+                "path": "|0193211f2a0a70c39cd22adda647c3f7|77b959cf66de4c1590c7f9b7da3982f3|",
+                "childCount": 0,
+                "type": "page",
+                "productAssignmentType": "product",
+                "visible": true,
+                "active": true,
+                "cmsPageIdSwitched": false,
+                "visibleChildCount": 0,
+                "name": "Sweets",
+                "customFields": null,
+                "slotConfig": null,
+                "linkType": null,
+                "internalLink": null,
+                "externalLink": null,
+                "linkNewTab": null,
+                "description": null,
+                "metaTitle": null,
+                "metaDescription": null,
+                "keywords": null,
+                "cmsPageId": "0193211f2fe97271a1bcb57c190cfb5f",
+                "cmsPageVersionId": null,
+                "productStreamId": null,
+                "customEntityTypeId": null,
+                "createdAt": "2024-11-12T16:06:44.317+00:00",
+                "updatedAt": null,
+                "translated": {
+                    "breadcrumb": [
+                        "Catalogue #1",
+                        "Food",
+                        "Sweets"
+                    ],
+                    "name": "Sweets",
+                    "customFields": {},
+                    "slotConfig": null,
+                    "linkType": null,
+                    "internalLink": null,
+                    "externalLink": null,
+                    "linkNewTab": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "metaDescription": null,
+                    "keywords": null
+                },
+                "apiAlias": "category_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb"
+            },
+            "relationships": {
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/children"
+                    }
+                },
+                "media": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/media"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/translations"
+                    }
+                },
+                "products": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/products"
+                    }
+                },
+                "nestedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/nested-products"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/tags"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/cms-page"
+                    }
+                },
+                "productStream": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/product-stream"
+                    }
+                },
+                "navigationSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/navigation-sales-channels"
+                    }
+                },
+                "footerSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/footer-sales-channels"
+                    }
+                },
+                "serviceSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/service-sales-channels"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/bb22b05bff9140f3808b1cff975b75eb/seo-urls"
+                    }
+                }
+            },
+            "meta": null
+        },
+        {
+            "id": "a515ae260223466f8e37471d279e6406",
+            "type": "category",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "0193211f2a0a70c39cd22adda647c3f7",
+                "parentVersionId": null,
+                "afterCategoryId": "77b959cf66de4c1590c7f9b7da3982f3",
+                "afterCategoryVersionId": null,
+                "mediaId": null,
+                "displayNestedProducts": true,
+                "autoIncrement": 6,
+                "breadcrumb": [
+                    "Catalogue #1",
+                    "Clothing"
+                ],
+                "level": 2,
+                "path": "|0193211f2a0a70c39cd22adda647c3f7|",
+                "childCount": 2,
+                "type": "page",
+                "productAssignmentType": "product",
+                "visible": true,
+                "active": true,
+                "cmsPageIdSwitched": false,
+                "visibleChildCount": 0,
+                "name": "Clothing",
+                "customFields": null,
+                "slotConfig": null,
+                "linkType": null,
+                "internalLink": null,
+                "externalLink": null,
+                "linkNewTab": null,
+                "description": null,
+                "metaTitle": null,
+                "metaDescription": null,
+                "keywords": null,
+                "cmsPageId": "0193211f2fe97271a1bcb57c190cfb5f",
+                "cmsPageVersionId": null,
+                "productStreamId": null,
+                "customEntityTypeId": null,
+                "createdAt": "2024-11-12T16:06:44.319+00:00",
+                "updatedAt": null,
+                "translated": {
+                    "breadcrumb": [
+                        "Catalogue #1",
+                        "Clothing"
+                    ],
+                    "name": "Clothing",
+                    "customFields": {},
+                    "slotConfig": null,
+                    "linkType": null,
+                    "internalLink": null,
+                    "externalLink": null,
+                    "linkNewTab": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "metaDescription": null,
+                    "keywords": null
+                },
+                "apiAlias": "category_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406"
+            },
+            "relationships": {
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/children"
+                    }
+                },
+                "media": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/media"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/translations"
+                    }
+                },
+                "products": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/products"
+                    }
+                },
+                "nestedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/nested-products"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/tags"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/cms-page"
+                    }
+                },
+                "productStream": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/product-stream"
+                    }
+                },
+                "navigationSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/navigation-sales-channels"
+                    }
+                },
+                "footerSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/footer-sales-channels"
+                    }
+                },
+                "serviceSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/service-sales-channels"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/a515ae260223466f8e37471d279e6406/seo-urls"
+                    }
+                }
+            },
+            "meta": null
+        },
+        {
+            "id": "8de9b484c54f441c894774e5f57e485c",
+            "type": "category",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "a515ae260223466f8e37471d279e6406",
+                "parentVersionId": null,
+                "afterCategoryId": null,
+                "afterCategoryVersionId": null,
+                "mediaId": null,
+                "displayNestedProducts": true,
+                "autoIncrement": 7,
+                "breadcrumb": [
+                    "Catalogue #1",
+                    "Clothing",
+                    "Women"
+                ],
+                "level": 3,
+                "path": "|0193211f2a0a70c39cd22adda647c3f7|a515ae260223466f8e37471d279e6406|",
+                "childCount": 0,
+                "type": "page",
+                "productAssignmentType": "product",
+                "visible": true,
+                "active": true,
+                "cmsPageIdSwitched": false,
+                "visibleChildCount": 0,
+                "name": "Women",
+                "customFields": null,
+                "slotConfig": null,
+                "linkType": null,
+                "internalLink": null,
+                "externalLink": null,
+                "linkNewTab": null,
+                "description": null,
+                "metaTitle": null,
+                "metaDescription": null,
+                "keywords": null,
+                "cmsPageId": "0193211f2fe97271a1bcb57c190cfb5f",
+                "cmsPageVersionId": null,
+                "productStreamId": null,
+                "customEntityTypeId": null,
+                "createdAt": "2024-11-12T16:06:44.321+00:00",
+                "updatedAt": null,
+                "translated": {
+                    "breadcrumb": [
+                        "Catalogue #1",
+                        "Clothing",
+                        "Women"
+                    ],
+                    "name": "Women",
+                    "customFields": {},
+                    "slotConfig": null,
+                    "linkType": null,
+                    "internalLink": null,
+                    "externalLink": null,
+                    "linkNewTab": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "metaDescription": null,
+                    "keywords": null
+                },
+                "apiAlias": "category_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c"
+            },
+            "relationships": {
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/children"
+                    }
+                },
+                "media": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/media"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/translations"
+                    }
+                },
+                "products": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/products"
+                    }
+                },
+                "nestedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/nested-products"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/tags"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/cms-page"
+                    }
+                },
+                "productStream": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/product-stream"
+                    }
+                },
+                "navigationSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/navigation-sales-channels"
+                    }
+                },
+                "footerSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/footer-sales-channels"
+                    }
+                },
+                "serviceSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/service-sales-channels"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/8de9b484c54f441c894774e5f57e485c/seo-urls"
+                    }
+                }
+            },
+            "meta": null
+        },
+        {
+            "id": "2185182cbbd4462ea844abeb2a438b33",
+            "type": "category",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "a515ae260223466f8e37471d279e6406",
+                "parentVersionId": null,
+                "afterCategoryId": "8de9b484c54f441c894774e5f57e485c",
+                "afterCategoryVersionId": null,
+                "mediaId": null,
+                "displayNestedProducts": true,
+                "autoIncrement": 8,
+                "breadcrumb": [
+                    "Catalogue #1",
+                    "Clothing",
+                    "Men"
+                ],
+                "level": 3,
+                "path": "|0193211f2a0a70c39cd22adda647c3f7|a515ae260223466f8e37471d279e6406|",
+                "childCount": 0,
+                "type": "page",
+                "productAssignmentType": "product",
+                "visible": true,
+                "active": true,
+                "cmsPageIdSwitched": false,
+                "visibleChildCount": 0,
+                "name": "Men",
+                "customFields": null,
+                "slotConfig": null,
+                "linkType": null,
+                "internalLink": null,
+                "externalLink": null,
+                "linkNewTab": null,
+                "description": null,
+                "metaTitle": null,
+                "metaDescription": null,
+                "keywords": null,
+                "cmsPageId": "0193211f2fe97271a1bcb57c190cfb5f",
+                "cmsPageVersionId": null,
+                "productStreamId": null,
+                "customEntityTypeId": null,
+                "createdAt": "2024-11-12T16:06:44.323+00:00",
+                "updatedAt": null,
+                "translated": {
+                    "breadcrumb": [
+                        "Catalogue #1",
+                        "Clothing",
+                        "Men"
+                    ],
+                    "name": "Men",
+                    "customFields": {},
+                    "slotConfig": null,
+                    "linkType": null,
+                    "internalLink": null,
+                    "externalLink": null,
+                    "linkNewTab": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "metaDescription": null,
+                    "keywords": null
+                },
+                "apiAlias": "category_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33"
+            },
+            "relationships": {
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/children"
+                    }
+                },
+                "media": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/media"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/translations"
+                    }
+                },
+                "products": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/products"
+                    }
+                },
+                "nestedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/nested-products"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/tags"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/cms-page"
+                    }
+                },
+                "productStream": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/product-stream"
+                    }
+                },
+                "navigationSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/navigation-sales-channels"
+                    }
+                },
+                "footerSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/footer-sales-channels"
+                    }
+                },
+                "serviceSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/service-sales-channels"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/2185182cbbd4462ea844abeb2a438b33/seo-urls"
+                    }
+                }
+            },
+            "meta": null
+        },
+        {
+            "id": "251448b91bc742de85643f5fccd89051",
+            "type": "category",
+            "attributes": {
+                "versionId": "0fa91ce3e96a4bc2be4bd9ce752c3425",
+                "parentId": "0193211f2a0a70c39cd22adda647c3f7",
+                "parentVersionId": null,
+                "afterCategoryId": "a515ae260223466f8e37471d279e6406",
+                "afterCategoryVersionId": null,
+                "mediaId": null,
+                "displayNestedProducts": true,
+                "autoIncrement": 9,
+                "breadcrumb": [
+                    "Catalogue #1",
+                    "Free time & electronics"
+                ],
+                "level": 2,
+                "path": "|0193211f2a0a70c39cd22adda647c3f7|",
+                "childCount": 0,
+                "type": "page",
+                "productAssignmentType": "product",
+                "visible": true,
+                "active": true,
+                "cmsPageIdSwitched": false,
+                "visibleChildCount": 0,
+                "name": "Free time & electronics",
+                "customFields": null,
+                "slotConfig": null,
+                "linkType": null,
+                "internalLink": null,
+                "externalLink": null,
+                "linkNewTab": null,
+                "description": null,
+                "metaTitle": null,
+                "metaDescription": null,
+                "keywords": null,
+                "cmsPageId": "0193211f2fe97271a1bcb57c190cfb5f",
+                "cmsPageVersionId": null,
+                "productStreamId": null,
+                "customEntityTypeId": null,
+                "createdAt": "2024-11-12T16:06:44.324+00:00",
+                "updatedAt": null,
+                "translated": {
+                    "breadcrumb": [
+                        "Catalogue #1",
+                        "Free time & electronics"
+                    ],
+                    "name": "Free time & electronics",
+                    "customFields": {},
+                    "slotConfig": null,
+                    "linkType": null,
+                    "internalLink": null,
+                    "externalLink": null,
+                    "linkNewTab": null,
+                    "description": null,
+                    "metaTitle": null,
+                    "metaDescription": null,
+                    "keywords": null
+                },
+                "apiAlias": "category_foreign_keys_extension"
+            },
+            "links": {
+                "self": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051"
+            },
+            "relationships": {
+                "parent": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/parent"
+                    }
+                },
+                "children": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/children"
+                    }
+                },
+                "media": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/media"
+                    }
+                },
+                "translations": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/translations"
+                    }
+                },
+                "products": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/products"
+                    }
+                },
+                "nestedProducts": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/nested-products"
+                    }
+                },
+                "tags": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/tags"
+                    }
+                },
+                "cmsPage": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/cms-page"
+                    }
+                },
+                "productStream": {
+                    "data": null,
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/product-stream"
+                    }
+                },
+                "navigationSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/navigation-sales-channels"
+                    }
+                },
+                "footerSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/footer-sales-channels"
+                    }
+                },
+                "serviceSalesChannels": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/service-sales-channels"
+                    }
+                },
+                "mainCategories": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/main-categories"
+                    }
+                },
+                "seoUrls": {
+                    "data": [],
+                    "links": {
+                        "related": "http://localhost:8080/api/category/251448b91bc742de85643f5fccd89051/seo-urls"
+                    }
+                }
+            },
+            "meta": null
+        }
+    ],
+    "included": [],
+    "links": {
+        "first": "http://localhost:8080/api/category?limit=25&page=1",
+        "self": "http://localhost:8080/api/category?limit=25"
+    },
+    "meta": {
+        "totalCountMode": 0,
+        "total": 9
+    },
+    "aggregations": []
+}
