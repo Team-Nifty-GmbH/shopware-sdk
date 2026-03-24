@@ -6,15 +6,19 @@ PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 
 echo "Waiting for Shopware to be ready..."
 
-# Wait for the health check to pass
-timeout=300
+# Wait for the health check to pass (dockware first boot can take 5-10 min)
+timeout=600
 elapsed=0
 while ! curl -sf http://localhost:8080/api/_info/config > /dev/null 2>&1; do
     if [ $elapsed -ge $timeout ]; then
         echo "ERROR: Shopware did not become ready within ${timeout}s"
+        echo "Docker container logs:"
+        docker compose logs --tail=50
         exit 1
     fi
-    echo "  Waiting... (${elapsed}s)"
+    if [ $((elapsed % 30)) -eq 0 ]; then
+        echo "  Waiting... (${elapsed}s)"
+    fi
     sleep 5
     elapsed=$((elapsed + 5))
 done
