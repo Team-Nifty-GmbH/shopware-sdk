@@ -1,0 +1,61 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  unit:
+    runs-on: [self-hosted, Linux]
+    strategy:
+      fail-fast: false
+      matrix:
+        php: [8.3, 8.4, 8.5]
+
+    name: Unit - PHP ${{ matrix.php }}
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+
+      - name: Install Dependencies
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Run Unit Tests
+        run: vendor/bin/pest --exclude-group=integration
+
+  integration:
+    runs-on: [self-hosted, Linux]
+    name: Integration Tests
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.5
+          coverage: none
+
+      - name: Install Dependencies
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Start Shopware
+        run: docker compose up -d
+
+      - name: Setup Integration
+        run: bin/setup-test-integration.sh
+
+      - name: Run Integration Tests
+        run: vendor/bin/pest --group=integration
+
+      - name: Stop Shopware
+        if: always()
+        run: docker compose down -v
