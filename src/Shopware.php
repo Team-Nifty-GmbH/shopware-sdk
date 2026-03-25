@@ -192,6 +192,21 @@ class Shopware extends Connector implements HasPagination
         $this->tokenUrl ??= $this->baseUrl . '/oauth/token';
     }
 
+    /**
+     * Boot the connector. Called before every request.
+     * Automatically authenticates with OAuth2 client credentials if not yet authenticated.
+     */
+    public function boot(\Saloon\Http\PendingRequest $pendingRequest): void
+    {
+        if ($pendingRequest->hasMockClient()) {
+            return;
+        }
+
+        if (! $pendingRequest->headers()->get('Authorization') && ! str_contains($pendingRequest->getUrl() ?? '', '/oauth/token')) {
+            $this->authenticate($this->getAccessToken());
+        }
+    }
+
     public function resolveBaseUrl(): string
     {
         return $this->baseUrl;
