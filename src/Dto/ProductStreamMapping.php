@@ -9,13 +9,12 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class ProductStreamMapping extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $productId = null,
-		public ?string $productVersionId = null,
-		public ?string $productStreamId = null,
-		public ?Product $product = null,
-		public ?ProductStream $productStream = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $productId = null,
+        public ?string $productVersionId = null,
+        public ?string $productStreamId = null,
+        public ?Product $product = null,
+        public ?ProductStream $productStream = null,
+    ) {}
 }

@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\CmsSection;
  */
 class GetCmsSection extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/cms-section/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/cms-section/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the cms_section
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the cms_section
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

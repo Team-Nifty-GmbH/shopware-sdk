@@ -9,13 +9,12 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class AggregationHistogram extends SpatieData
 {
-	public function __construct(
-		public ?string $name = null,
-		public ?string $type = null,
-		public ?string $field = null,
-		public int|float|null $interval = null,
-		public ?string $format = null,
-		public ?string $timeZone = null,
-	) {
-	}
+    public function __construct(
+        public ?string $name = null,
+        public ?string $type = null,
+        public ?string $field = null,
+        public int|float|null $interval = null,
+        public ?string $format = null,
+        public ?string $timeZone = null,
+    ) {}
 }

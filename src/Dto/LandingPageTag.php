@@ -9,13 +9,12 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class LandingPageTag extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $landingPageId = null,
-		public ?string $landingPageVersionId = null,
-		public ?string $tagId = null,
-		public ?LandingPage $landingPage = null,
-		public ?Tag $tag = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $landingPageId = null,
+        public ?string $landingPageVersionId = null,
+        public ?string $tagId = null,
+        public ?LandingPage $landingPage = null,
+        public ?Tag $tag = null,
+    ) {}
 }

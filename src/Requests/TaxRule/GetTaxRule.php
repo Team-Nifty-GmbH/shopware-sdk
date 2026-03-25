@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\TaxRule;
  */
 class GetTaxRule extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/tax-rule/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/tax-rule/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the tax_rule
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the tax_rule
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

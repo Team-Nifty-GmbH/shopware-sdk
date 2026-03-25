@@ -11,9 +11,8 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class RelationshipLinks extends SpatieData
 {
-	public function __construct(
-		public ?array $self = null,
-		public ?Link $related = null,
-	) {
-	}
+    public function __construct(
+        public ?array $self = null,
+        public ?Link $related = null,
+    ) {}
 }

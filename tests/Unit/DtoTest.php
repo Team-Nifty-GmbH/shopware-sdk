@@ -26,7 +26,7 @@ test('Product DTO can be instantiated', function (): void {
 });
 
 test('Product DTO defaults to null', function (): void {
-    $product = new Product();
+    $product = new Product;
 
     expect($product->id)->toBeNull()
         ->and($product->name)->toBeNull()

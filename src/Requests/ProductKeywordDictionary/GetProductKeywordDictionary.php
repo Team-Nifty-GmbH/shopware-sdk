@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\ProductKeywordDictionary;
  */
 class GetProductKeywordDictionary extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/product-keyword-dictionary/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/product-keyword-dictionary/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the product_keyword_dictionary
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the product_keyword_dictionary
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

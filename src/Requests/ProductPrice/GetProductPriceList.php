@@ -14,33 +14,28 @@ use TeamNiftyGmbH\Shopware\Dto\ProductPrice;
  */
 class GetProductPriceList extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/product-price';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/product-price";
-	}
+    /**
+     * @param  null|int  $limit  Max amount of resources to be returned in a page
+     * @param  null|int  $page  The page to be returned
+     * @param  null|string  $swQuery  Encoded SwagQL in JSON
+     */
+    public function __construct(
+        protected ?int $limit = null,
+        protected ?int $page = null,
+        protected ?string $swQuery = null,
+    ) {}
 
-
-	/**
-	 * @param null|int $limit Max amount of resources to be returned in a page
-	 * @param null|int $page The page to be returned
-	 * @param null|string $swQuery Encoded SwagQL in JSON
-	 */
-	public function __construct(
-		protected ?int $limit = null,
-		protected ?int $page = null,
-		protected ?string $swQuery = null,
-	) {
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['limit' => $this->limit, 'page' => $this->page, 'query' => $this->swQuery]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['limit' => $this->limit, 'page' => $this->page, 'query' => $this->swQuery]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

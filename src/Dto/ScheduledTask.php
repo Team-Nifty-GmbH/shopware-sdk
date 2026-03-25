@@ -9,17 +9,16 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class ScheduledTask extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $name = null,
-		public ?string $scheduledTaskClass = null,
-		public ?int $runInterval = null,
-		public ?int $defaultRunInterval = null,
-		public ?string $status = null,
-		public ?string $lastExecutionTime = null,
-		public ?string $nextExecutionTime = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $name = null,
+        public ?string $scheduledTaskClass = null,
+        public ?int $runInterval = null,
+        public ?int $defaultRunInterval = null,
+        public ?string $status = null,
+        public ?string $lastExecutionTime = null,
+        public ?string $nextExecutionTime = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+    ) {}
 }

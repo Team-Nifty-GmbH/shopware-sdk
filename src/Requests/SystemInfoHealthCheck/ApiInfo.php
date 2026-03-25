@@ -13,29 +13,24 @@ use Saloon\Http\Response;
  */
 class ApiInfo extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_info/openapi3.json';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_info/openapi3.json";
-	}
+    /**
+     * @param  null|string  $type  Type of the api
+     */
+    public function __construct(
+        protected ?string $type = null,
+    ) {}
 
-
-	/**
-	 * @param null|string $type Type of the api
-	 */
-	public function __construct(
-		protected ?string $type = null,
-	) {
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['type' => $this->type]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['type' => $this->type]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

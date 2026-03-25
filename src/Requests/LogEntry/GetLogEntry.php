@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\LogEntry;
  */
 class GetLogEntry extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/log-entry/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/log-entry/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the log_entry
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the log_entry
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

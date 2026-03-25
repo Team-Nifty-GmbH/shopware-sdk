@@ -14,23 +14,19 @@ use Saloon\Http\Response;
  */
 class DeleteExternalThumbnails extends Request
 {
-	protected Method $method = Method::DELETE;
+    protected Method $method = Method::DELETE;
 
+    public function resolveEndpoint(): string
+    {
+        return "/_action/media/{$this->mediaId}/external-thumbnails";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/media/{$this->mediaId}/external-thumbnails";
-	}
-
-
-	/**
-	 * @param mixed $mediaId ID of the external media entity the thumbnails will be deleted from..
-	 */
-	public function __construct(
-		protected mixed $mediaId,
-	) {
-	}
-
+    /**
+     * @param  mixed  $mediaId  ID of the external media entity the thumbnails will be deleted from..
+     */
+    public function __construct(
+        protected mixed $mediaId,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

@@ -14,63 +14,57 @@ use TeamNiftyGmbH\Shopware\Requests\AppFlowEvent\UpdateAppFlowEvent;
 
 class AppFlowEvent extends BaseResource
 {
-	public function aggregateAppFlowEvent(array $data = []): Response
-	{
-		return $this->connector->send(new AggregateAppFlowEvent($data));
-	}
+    public function aggregateAppFlowEvent(array $data = []): Response
+    {
+        return $this->connector->send(new AggregateAppFlowEvent($data));
+    }
 
+    /**
+     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     */
+    public function createAppFlowEvent(array $data, ?string $response = null): Response
+    {
+        return $this->connector->send(new CreateAppFlowEvent($data, $response));
+    }
 
-	/**
-	 * @param null|string $response Data format for response. Empty if none is provided.
-	 */
-	public function createAppFlowEvent(array $data, ?string $response = null): Response
-	{
-		return $this->connector->send(new CreateAppFlowEvent($data, $response));
-	}
+    /**
+     * @param  string  $id  Identifier for the app_flow_event
+     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     */
+    public function deleteAppFlowEvent(string $id, ?string $response = null): Response
+    {
+        return $this->connector->send(new DeleteAppFlowEvent($id, $response));
+    }
 
+    /**
+     * @param  string  $id  Identifier for the app_flow_event
+     */
+    public function getAppFlowEvent(string $id): Response
+    {
+        return $this->connector->send(new GetAppFlowEvent($id));
+    }
 
-	/**
-	 * @param string $id Identifier for the app_flow_event
-	 * @param null|string $response Data format for response. Empty if none is provided.
-	 */
-	public function deleteAppFlowEvent(string $id, ?string $response = null): Response
-	{
-		return $this->connector->send(new DeleteAppFlowEvent($id, $response));
-	}
+    /**
+     * @param  null|int  $limit  Max amount of resources to be returned in a page
+     * @param  null|int  $page  The page to be returned
+     * @param  null|string  $query  Encoded SwagQL in JSON
+     */
+    public function getAppFlowEventList(?int $limit = null, ?int $page = null, ?string $swQuery = null): Response
+    {
+        return $this->connector->send(new GetAppFlowEventList($limit, $page, $swQuery));
+    }
 
+    public function searchAppFlowEvent(array $data = [], ?string $swIncludeSearchInfo = null): Response
+    {
+        return $this->connector->send(new SearchAppFlowEvent($data, $swIncludeSearchInfo));
+    }
 
-	/**
-	 * @param string $id Identifier for the app_flow_event
-	 */
-	public function getAppFlowEvent(string $id): Response
-	{
-		return $this->connector->send(new GetAppFlowEvent($id));
-	}
-
-
-	/**
-	 * @param null|int $limit Max amount of resources to be returned in a page
-	 * @param null|int $page The page to be returned
-	 * @param null|string $query Encoded SwagQL in JSON
-	 */
-	public function getAppFlowEventList(?int $limit = null, ?int $page = null, ?string $swQuery = null): Response
-	{
-		return $this->connector->send(new GetAppFlowEventList($limit, $page, $swQuery));
-	}
-
-
-	public function searchAppFlowEvent(array $data = [], ?string $swIncludeSearchInfo = null): Response
-	{
-		return $this->connector->send(new SearchAppFlowEvent($data, $swIncludeSearchInfo));
-	}
-
-
-	/**
-	 * @param string $id Identifier for the app_flow_event
-	 * @param null|string $response Data format for response. Empty if none is provided.
-	 */
-	public function updateAppFlowEvent(string $id, array $data, ?string $response = null): Response
-	{
-		return $this->connector->send(new UpdateAppFlowEvent($id, $data, $response));
-	}
+    /**
+     * @param  string  $id  Identifier for the app_flow_event
+     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     */
+    public function updateAppFlowEvent(string $id, array $data, ?string $response = null): Response
+    {
+        return $this->connector->send(new UpdateAppFlowEvent($id, $data, $response));
+    }
 }

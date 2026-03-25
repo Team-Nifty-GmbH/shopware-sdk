@@ -13,31 +13,26 @@ use Saloon\Http\Response;
  */
 class DeleteMediaThumbnailSize extends Request
 {
-	protected Method $method = Method::DELETE;
+    protected Method $method = Method::DELETE;
 
+    public function resolveEndpoint(): string
+    {
+        return "/media-thumbnail-size/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/media-thumbnail-size/{$this->id}";
-	}
+    /**
+     * @param  string  $id  Identifier for the media_thumbnail_size
+     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     */
+    public function __construct(
+        protected string $id,
+        protected ?string $response = null,
+    ) {}
 
-
-	/**
-	 * @param string $id Identifier for the media_thumbnail_size
-	 * @param null|string $response Data format for response. Empty if none is provided.
-	 */
-	public function __construct(
-		protected string $id,
-		protected ?string $response = null,
-	) {
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['_response' => $this->response]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['_response' => $this->response]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

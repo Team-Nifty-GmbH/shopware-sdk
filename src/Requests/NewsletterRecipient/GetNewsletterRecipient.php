@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\NewsletterRecipient;
  */
 class GetNewsletterRecipient extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/newsletter-recipient/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/newsletter-recipient/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the newsletter_recipient
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the newsletter_recipient
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

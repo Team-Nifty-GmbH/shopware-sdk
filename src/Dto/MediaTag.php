@@ -9,12 +9,11 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class MediaTag extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $mediaId = null,
-		public ?string $tagId = null,
-		public ?Media $media = null,
-		public ?Tag $tag = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $mediaId = null,
+        public ?string $tagId = null,
+        public ?Media $media = null,
+        public ?Tag $tag = null,
+    ) {}
 }

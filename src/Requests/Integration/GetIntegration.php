@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\Integration;
  */
 class GetIntegration extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/integration/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/integration/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the integration
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the integration
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

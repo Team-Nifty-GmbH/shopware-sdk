@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\AppActionButton;
  */
 class GetAppActionButton extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/app-action-button/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/app-action-button/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the app_action_button
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the app_action_button
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

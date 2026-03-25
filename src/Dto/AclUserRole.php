@@ -9,14 +9,13 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class AclUserRole extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $userId = null,
-		public ?string $aclRoleId = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?User $user = null,
-		public ?AclRole $aclRole = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $userId = null,
+        public ?string $aclRoleId = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?User $user = null,
+        public ?AclRole $aclRole = null,
+    ) {}
 }

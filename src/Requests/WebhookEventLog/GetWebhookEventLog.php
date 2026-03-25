@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\WebhookEventLog;
  */
 class GetWebhookEventLog extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/webhook-event-log/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/webhook-event-log/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the webhook_event_log
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the webhook_event_log
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

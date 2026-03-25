@@ -9,14 +9,13 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class MailTemplateMedia extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $mailTemplateId = null,
-		public ?string $languageId = null,
-		public ?string $mediaId = null,
-		public ?int $position = null,
-		public ?MailTemplate $mailTemplate = null,
-		public ?Media $media = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $mailTemplateId = null,
+        public ?string $languageId = null,
+        public ?string $mediaId = null,
+        public ?int $position = null,
+        public ?MailTemplate $mailTemplate = null,
+        public ?Media $media = null,
+    ) {}
 }

@@ -9,16 +9,15 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class CurrencyCountryRounding extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $currencyId = null,
-		public ?string $countryId = null,
-		public ?object $itemRounding = null,
-		public ?object $totalRounding = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?Currency $currency = null,
-		public ?Country $country = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $currencyId = null,
+        public ?string $countryId = null,
+        public ?object $itemRounding = null,
+        public ?object $totalRounding = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?Currency $currency = null,
+        public ?Country $country = null,
+    ) {}
 }

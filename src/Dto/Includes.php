@@ -12,7 +12,5 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class Includes extends SpatieData
 {
-	public function __construct()
-	{
-	}
+    public function __construct() {}
 }

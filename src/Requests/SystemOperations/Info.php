@@ -13,19 +13,14 @@ use Saloon\Http\Response;
  */
 class Info extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_action/cache_info';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/cache_info";
-	}
-
-
-	public function __construct()
-	{
-	}
-
+    public function __construct() {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

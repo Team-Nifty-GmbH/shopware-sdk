@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\DocumentBaseConfig;
  */
 class GetDocumentBaseConfig extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/document-base-config/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/document-base-config/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the document_base_config
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the document_base_config
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

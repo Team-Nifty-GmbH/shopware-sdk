@@ -19,33 +19,28 @@ use Saloon\Http\Response;
  */
 class NumberRangeReserve extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/_action/number-range/reserve/{$this->type}/{$this->saleschannel}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/number-range/reserve/{$this->type}/{$this->saleschannel}";
-	}
+    /**
+     * @param  string  $type  `technicalName` of the document type (e.g. `document_invoice`). Available types can be fetched with the `/api/document-type endpoint`.
+     * @param  string  $saleschannel  Sales channel for the number range. Number ranges can be defined per sales channel, so you can pass a sales channel ID here.
+     * @param  null|bool  $preview  If this parameter has a true value, the number will not actually be incremented, but only previewed.
+     */
+    public function __construct(
+        protected string $type,
+        protected string $saleschannel,
+        protected ?bool $preview = null,
+    ) {}
 
-
-	/**
-	 * @param string $type `technicalName` of the document type (e.g. `document_invoice`). Available types can be fetched with the `/api/document-type endpoint`.
-	 * @param string $saleschannel Sales channel for the number range. Number ranges can be defined per sales channel, so you can pass a sales channel ID here.
-	 * @param null|bool $preview If this parameter has a true value, the number will not actually be incremented, but only previewed.
-	 */
-	public function __construct(
-		protected string $type,
-		protected string $saleschannel,
-		protected ?bool $preview = null,
-	) {
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['preview' => $this->preview]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['preview' => $this->preview]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

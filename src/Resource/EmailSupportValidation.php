@@ -8,8 +8,8 @@ use TeamNiftyGmbH\Shopware\Requests\EmailSupportValidation\SupportsEmail;
 
 class EmailSupportValidation extends BaseResource
 {
-	public function supportsEmail(array $data = []): Response
-	{
-		return $this->connector->send(new SupportsEmail($data));
-	}
+    public function supportsEmail(array $data = []): Response
+    {
+        return $this->connector->send(new SupportsEmail($data));
+    }
 }

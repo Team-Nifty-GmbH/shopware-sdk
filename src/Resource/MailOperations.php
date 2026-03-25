@@ -10,20 +10,18 @@ use TeamNiftyGmbH\Shopware\Requests\MailOperations\Validate;
 
 class MailOperations extends BaseResource
 {
-	public function build(array $data = []): Response
-	{
-		return $this->connector->send(new Build($data));
-	}
+    public function build(array $data = []): Response
+    {
+        return $this->connector->send(new Build($data));
+    }
 
+    public function send(array $data = []): Response
+    {
+        return $this->connector->send(new Send($data));
+    }
 
-	public function send(array $data = []): Response
-	{
-		return $this->connector->send(new Send($data));
-	}
-
-
-	public function validate(array $data = []): Response
-	{
-		return $this->connector->send(new Validate($data));
-	}
+    public function validate(array $data = []): Response
+    {
+        return $this->connector->send(new Validate($data));
+    }
 }

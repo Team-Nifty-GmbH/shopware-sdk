@@ -9,15 +9,14 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class PromotionDiscountPrices extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $discountId = null,
-		public ?string $currencyId = null,
-		public ?float $price = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?PromotionDiscount $promotionDiscount = null,
-		public ?Currency $currency = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $discountId = null,
+        public ?string $currencyId = null,
+        public ?float $price = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?PromotionDiscount $promotionDiscount = null,
+        public ?Currency $currency = null,
+    ) {}
 }

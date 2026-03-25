@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\UserConfig;
  */
 class GetUserConfig extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/user-config/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/user-config/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the user_config
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the user_config
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

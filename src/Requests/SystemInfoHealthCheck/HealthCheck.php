@@ -11,19 +11,14 @@ use Saloon\Http\Response;
  */
 class HealthCheck extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_info/health-check';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_info/health-check";
-	}
-
-
-	public function __construct()
-	{
-	}
-
+    public function __construct() {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

@@ -13,19 +13,14 @@ use Saloon\Http\Response;
  */
 class ClearOldCacheFolders extends Request
 {
-	protected Method $method = Method::DELETE;
+    protected Method $method = Method::DELETE;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_action/cleanup';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/cleanup";
-	}
-
-
-	public function __construct()
-	{
-	}
-
+    public function __construct() {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

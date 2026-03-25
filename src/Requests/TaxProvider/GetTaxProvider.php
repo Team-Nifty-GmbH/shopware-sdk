@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\TaxProvider;
  */
 class GetTaxProvider extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/tax-provider/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/tax-provider/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the tax_provider
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the tax_provider
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

@@ -9,16 +9,15 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class ImportExportFile extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $originalName = null,
-		public ?string $path = null,
-		public ?string $expireDate = null,
-		public ?int $size = null,
-		public ?string $accessToken = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?ImportExportLog $log = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $originalName = null,
+        public ?string $path = null,
+        public ?string $expireDate = null,
+        public ?int $size = null,
+        public ?string $accessToken = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?ImportExportLog $log = null,
+    ) {}
 }

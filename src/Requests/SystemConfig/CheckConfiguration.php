@@ -13,29 +13,24 @@ use Saloon\Http\Response;
  */
 class CheckConfiguration extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_action/system-config/check';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/system-config/check";
-	}
+    /**
+     * @param  string  $domain  The configuration domain to check.
+     */
+    public function __construct(
+        protected string $domain,
+    ) {}
 
-
-	/**
-	 * @param string $domain The configuration domain to check.
-	 */
-	public function __construct(
-		protected string $domain,
-	) {
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['domain' => $this->domain]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['domain' => $this->domain]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

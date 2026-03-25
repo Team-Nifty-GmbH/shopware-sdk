@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\OrderLineItem;
  */
 class GetOrderLineItem extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/order-line-item/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/order-line-item/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the order_line_item
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the order_line_item
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

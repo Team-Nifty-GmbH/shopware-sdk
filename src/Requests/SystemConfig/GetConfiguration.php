@@ -14,29 +14,24 @@ use TeamNiftyGmbH\Shopware\Dto\SystemConfig;
  */
 class GetConfiguration extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_action/system-config/schema';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/system-config/schema";
-	}
+    /**
+     * @param  string  $domain  The configuration domain.
+     */
+    public function __construct(
+        protected string $domain,
+    ) {}
 
-
-	/**
-	 * @param string $domain The configuration domain.
-	 */
-	public function __construct(
-		protected string $domain,
-	) {
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['domain' => $this->domain]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['domain' => $this->domain]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

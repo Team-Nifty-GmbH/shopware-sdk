@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\SalesChannelType;
  */
 class GetSalesChannelType extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/sales-channel-type/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/sales-channel-type/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the sales_channel_type
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the sales_channel_type
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

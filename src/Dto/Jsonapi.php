@@ -9,9 +9,8 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class Jsonapi extends SpatieData
 {
-	public function __construct(
-		public ?string $version = null,
-		public ?Meta $meta = null,
-	) {
-	}
+    public function __construct(
+        public ?string $version = null,
+        public ?Meta $meta = null,
+    ) {}
 }

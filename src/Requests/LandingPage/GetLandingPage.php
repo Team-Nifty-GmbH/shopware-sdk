@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\LandingPage;
  */
 class GetLandingPage extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/landing-page/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/landing-page/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the landing_page
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the landing_page
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

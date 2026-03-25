@@ -14,33 +14,28 @@ use TeamNiftyGmbH\Shopware\Dto\StateMachine;
  */
 class GetEntityState extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/_action/state-machine/{$this->entityName}/{$this->entityId}/state";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/state-machine/{$this->entityName}/{$this->entityId}/state";
-	}
+    /**
+     * @param  string  $entityName  Name of the entity.
+     * @param  string  $entityId  Identifier of the entity.
+     * @param  null|string  $stateFieldName  This is the state column within the order delivery database table. There should be no need to change it from the default.
+     */
+    public function __construct(
+        protected string $entityName,
+        protected string $entityId,
+        protected ?string $stateFieldName = null,
+    ) {}
 
-
-	/**
-	 * @param string $entityName Name of the entity.
-	 * @param string $entityId Identifier of the entity.
-	 * @param null|string $stateFieldName This is the state column within the order delivery database table. There should be no need to change it from the default.
-	 */
-	public function __construct(
-		protected string $entityName,
-		protected string $entityId,
-		protected ?string $stateFieldName = null,
-	) {
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['stateFieldName' => $this->stateFieldName]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['stateFieldName' => $this->stateFieldName]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

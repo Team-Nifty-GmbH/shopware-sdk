@@ -9,16 +9,15 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class Snippet extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $setId = null,
-		public ?string $translationKey = null,
-		public ?string $value = null,
-		public ?string $author = null,
-		public ?object $customFields = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?SnippetSet $set = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $setId = null,
+        public ?string $translationKey = null,
+        public ?string $value = null,
+        public ?string $author = null,
+        public ?object $customFields = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?SnippetSet $set = null,
+    ) {}
 }

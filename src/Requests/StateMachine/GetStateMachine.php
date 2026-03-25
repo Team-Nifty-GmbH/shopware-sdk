@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\StateMachine;
  */
 class GetStateMachine extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/state-machine/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/state-machine/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the state_machine
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the state_machine
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

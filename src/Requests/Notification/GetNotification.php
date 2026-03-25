@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\Notification;
  */
 class GetNotification extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/notification/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/notification/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the notification
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the notification
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

@@ -9,13 +9,12 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class CustomFieldSetRelation extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $customFieldSetId = null,
-		public ?string $entityName = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?CustomFieldSet $customFieldSet = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $customFieldSetId = null,
+        public ?string $entityName = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?CustomFieldSet $customFieldSet = null,
+    ) {}
 }

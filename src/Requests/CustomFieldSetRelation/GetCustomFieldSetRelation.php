@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\CustomFieldSetRelation;
  */
 class GetCustomFieldSetRelation extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/custom-field-set-relation/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/custom-field-set-relation/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the custom_field_set_relation
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the custom_field_set_relation
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

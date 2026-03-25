@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\ProductCrossSelling;
  */
 class GetProductCrossSelling extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/product-cross-selling/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/product-cross-selling/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the product_cross_selling
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the product_cross_selling
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

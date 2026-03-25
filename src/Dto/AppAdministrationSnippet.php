@@ -9,13 +9,12 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class AppAdministrationSnippet extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $value = null,
-		public ?string $appId = null,
-		public ?string $localeId = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $value = null,
+        public ?string $appId = null,
+        public ?string $localeId = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+    ) {}
 }

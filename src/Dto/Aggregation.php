@@ -6,7 +6,5 @@ use Spatie\LaravelData\Data as SpatieData;
 
 class Aggregation extends SpatieData
 {
-	public function __construct()
-	{
-	}
+    public function __construct() {}
 }

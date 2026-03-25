@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\OrderDeliveryPosition;
  */
 class GetOrderDeliveryPosition extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/order-delivery-position/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/order-delivery-position/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the order_delivery_position
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the order_delivery_position
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

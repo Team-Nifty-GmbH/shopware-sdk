@@ -5,8 +5,8 @@ namespace TeamNiftyGmbH\Shopware\Requests\AssetManagement;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Http\Response;
+use Saloon\Traits\Body\HasJsonBody;
 
 /**
  * upload
@@ -25,42 +25,36 @@ use Saloon\Http\Response;
  */
 class Upload extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::POST;
+    protected Method $method = Method::POST;
 
+    public function resolveEndpoint(): string
+    {
+        return "/_action/media/{$this->mediaId}/upload";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/media/{$this->mediaId}/upload";
-	}
+    /**
+     * @param  mixed  $mediaId  Identifier of the media entity.
+     * @param  null|string  $fileName  Name of the uploaded file. If not provided the media identifier will be used as name
+     * @param  string  $extension  Extension of the uploaded file. For example `png`
+     */
+    public function __construct(
+        protected mixed $mediaId,
+        protected string $extension,
+        protected array $data = [],
+        protected ?string $fileName = null,
+    ) {}
 
+    public function defaultBody(): array
+    {
+        return $this->data;
+    }
 
-	/**
-	 * @param mixed $mediaId Identifier of the media entity.
-	 * @param null|string $fileName Name of the uploaded file. If not provided the media identifier will be used as name
-	 * @param string $extension Extension of the uploaded file. For example `png`
-	 */
-	public function __construct(
-		protected mixed $mediaId,
-		protected string $extension,
-		protected array $data = [],
-		protected ?string $fileName = null,
-	) {
-	}
-
-
-	public function defaultBody(): array
-	{
-		return $this->data;
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['fileName' => $this->fileName, 'extension' => $this->extension]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['fileName' => $this->fileName, 'extension' => $this->extension]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

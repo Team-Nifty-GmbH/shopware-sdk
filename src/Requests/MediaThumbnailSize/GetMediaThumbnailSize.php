@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\MediaThumbnailSize;
  */
 class GetMediaThumbnailSize extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/media-thumbnail-size/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/media-thumbnail-size/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the media_thumbnail_size
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the media_thumbnail_size
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

@@ -11,32 +11,23 @@ use TeamNiftyGmbH\Shopware\Requests\AppSystem\ManagePrivileges;
 
 class AppSystem extends BaseResource
 {
-	public function appSecretRotation(array $data = []): Response
-	{
-		return $this->connector->send(new AppSecretRotation($data));
-	}
+    public function appSecretRotation(array $data = []): Response
+    {
+        return $this->connector->send(new AppSecretRotation($data));
+    }
 
+    public function getAcceptedPrivileges(string $appName): Response
+    {
+        return $this->connector->send(new GetAcceptedPrivileges($appName));
+    }
 
-	/**
-	 * @param string $appName 
-	 */
-	public function getAcceptedPrivileges(string $appName): Response
-	{
-		return $this->connector->send(new GetAcceptedPrivileges($appName));
-	}
+    public function getRequestedPrivileges(): Response
+    {
+        return $this->connector->send(new GetRequestedPrivileges);
+    }
 
-
-	public function getRequestedPrivileges(): Response
-	{
-		return $this->connector->send(new GetRequestedPrivileges());
-	}
-
-
-	/**
-	 * @param string $appName 
-	 */
-	public function managePrivileges(string $appName, array $data = []): Response
-	{
-		return $this->connector->send(new ManagePrivileges($appName, $data));
-	}
+    public function managePrivileges(string $appName, array $data = []): Response
+    {
+        return $this->connector->send(new ManagePrivileges($appName, $data));
+    }
 }

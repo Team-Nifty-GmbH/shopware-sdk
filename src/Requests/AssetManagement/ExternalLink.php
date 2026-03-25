@@ -5,8 +5,8 @@ namespace TeamNiftyGmbH\Shopware\Requests\AssetManagement;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Http\Response;
+use Saloon\Traits\Body\HasJsonBody;
 
 /**
  * externalLink
@@ -15,29 +15,23 @@ use Saloon\Http\Response;
  */
 class ExternalLink extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::POST;
+    protected Method $method = Method::POST;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_action/media/external-link';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/media/external-link";
-	}
+    public function __construct(
+        protected array $data = [],
+    ) {}
 
-
-	public function __construct(
-		protected array $data = [],
-	)
-	{
-	}
-
-
-	public function defaultBody(): array
-	{
-		return $this->data;
-	}
-
+    public function defaultBody(): array
+    {
+        return $this->data;
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

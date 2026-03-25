@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\CustomEntity;
  */
 class GetCustomEntity extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/custom-entity/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/custom-entity/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the custom_entity
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the custom_entity
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

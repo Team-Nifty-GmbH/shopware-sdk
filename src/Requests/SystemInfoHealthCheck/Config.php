@@ -17,19 +17,14 @@ use Saloon\Http\Response;
  */
 class Config extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_info/config';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_info/config";
-	}
-
-
-	public function __construct()
-	{
-	}
-
+    public function __construct() {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

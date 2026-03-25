@@ -5,8 +5,8 @@ namespace TeamNiftyGmbH\Shopware\Requests\DocumentManagement;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Http\Response;
+use Saloon\Traits\Body\HasJsonBody;
 
 /**
  * uploadToDocument
@@ -30,42 +30,36 @@ use Saloon\Http\Response;
  */
 class UploadToDocument extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::POST;
+    protected Method $method = Method::POST;
 
+    public function resolveEndpoint(): string
+    {
+        return "/_action/document/{$this->documentId}/upload";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/document/{$this->documentId}/upload";
-	}
+    /**
+     * @param  string  $documentId  Identifier of the document the new file should be added to.
+     * @param  string  $fileName  Name of the uploaded file.
+     * @param  string  $extension  Extension of the uploaded file. For example `pdf`
+     */
+    public function __construct(
+        protected string $documentId,
+        protected string $fileName,
+        protected string $extension,
+        protected array $data = [],
+    ) {}
 
+    public function defaultBody(): array
+    {
+        return $this->data;
+    }
 
-	/**
-	 * @param string $documentId Identifier of the document the new file should be added to.
-	 * @param string $fileName Name of the uploaded file.
-	 * @param string $extension Extension of the uploaded file. For example `pdf`
-	 */
-	public function __construct(
-		protected string $documentId,
-		protected string $fileName,
-		protected string $extension,
-		protected array $data = [],
-	) {
-	}
-
-
-	public function defaultBody(): array
-	{
-		return $this->data;
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['fileName' => $this->fileName, 'extension' => $this->extension]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['fileName' => $this->fileName, 'extension' => $this->extension]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

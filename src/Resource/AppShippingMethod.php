@@ -14,63 +14,57 @@ use TeamNiftyGmbH\Shopware\Requests\AppShippingMethod\UpdateAppShippingMethod;
 
 class AppShippingMethod extends BaseResource
 {
-	public function aggregateAppShippingMethod(array $data = []): Response
-	{
-		return $this->connector->send(new AggregateAppShippingMethod($data));
-	}
+    public function aggregateAppShippingMethod(array $data = []): Response
+    {
+        return $this->connector->send(new AggregateAppShippingMethod($data));
+    }
 
+    /**
+     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     */
+    public function createAppShippingMethod(array $data, ?string $response = null): Response
+    {
+        return $this->connector->send(new CreateAppShippingMethod($data, $response));
+    }
 
-	/**
-	 * @param null|string $response Data format for response. Empty if none is provided.
-	 */
-	public function createAppShippingMethod(array $data, ?string $response = null): Response
-	{
-		return $this->connector->send(new CreateAppShippingMethod($data, $response));
-	}
+    /**
+     * @param  string  $id  Identifier for the app_shipping_method
+     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     */
+    public function deleteAppShippingMethod(string $id, ?string $response = null): Response
+    {
+        return $this->connector->send(new DeleteAppShippingMethod($id, $response));
+    }
 
+    /**
+     * @param  string  $id  Identifier for the app_shipping_method
+     */
+    public function getAppShippingMethod(string $id): Response
+    {
+        return $this->connector->send(new GetAppShippingMethod($id));
+    }
 
-	/**
-	 * @param string $id Identifier for the app_shipping_method
-	 * @param null|string $response Data format for response. Empty if none is provided.
-	 */
-	public function deleteAppShippingMethod(string $id, ?string $response = null): Response
-	{
-		return $this->connector->send(new DeleteAppShippingMethod($id, $response));
-	}
+    /**
+     * @param  null|int  $limit  Max amount of resources to be returned in a page
+     * @param  null|int  $page  The page to be returned
+     * @param  null|string  $query  Encoded SwagQL in JSON
+     */
+    public function getAppShippingMethodList(?int $limit = null, ?int $page = null, ?string $swQuery = null): Response
+    {
+        return $this->connector->send(new GetAppShippingMethodList($limit, $page, $swQuery));
+    }
 
+    public function searchAppShippingMethod(array $data = [], ?string $swIncludeSearchInfo = null): Response
+    {
+        return $this->connector->send(new SearchAppShippingMethod($data, $swIncludeSearchInfo));
+    }
 
-	/**
-	 * @param string $id Identifier for the app_shipping_method
-	 */
-	public function getAppShippingMethod(string $id): Response
-	{
-		return $this->connector->send(new GetAppShippingMethod($id));
-	}
-
-
-	/**
-	 * @param null|int $limit Max amount of resources to be returned in a page
-	 * @param null|int $page The page to be returned
-	 * @param null|string $query Encoded SwagQL in JSON
-	 */
-	public function getAppShippingMethodList(?int $limit = null, ?int $page = null, ?string $swQuery = null): Response
-	{
-		return $this->connector->send(new GetAppShippingMethodList($limit, $page, $swQuery));
-	}
-
-
-	public function searchAppShippingMethod(array $data = [], ?string $swIncludeSearchInfo = null): Response
-	{
-		return $this->connector->send(new SearchAppShippingMethod($data, $swIncludeSearchInfo));
-	}
-
-
-	/**
-	 * @param string $id Identifier for the app_shipping_method
-	 * @param null|string $response Data format for response. Empty if none is provided.
-	 */
-	public function updateAppShippingMethod(string $id, array $data, ?string $response = null): Response
-	{
-		return $this->connector->send(new UpdateAppShippingMethod($id, $data, $response));
-	}
+    /**
+     * @param  string  $id  Identifier for the app_shipping_method
+     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     */
+    public function updateAppShippingMethod(string $id, array $data, ?string $response = null): Response
+    {
+        return $this->connector->send(new UpdateAppShippingMethod($id, $data, $response));
+    }
 }

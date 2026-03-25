@@ -9,15 +9,14 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class TaxRuleType extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $technicalName = null,
-		public ?int $position = null,
-		public ?string $typeName = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?object $translated = null,
-		public ?array $rules = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $technicalName = null,
+        public ?int $position = null,
+        public ?string $typeName = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?object $translated = null,
+        public ?array $rules = null,
+    ) {}
 }

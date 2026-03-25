@@ -9,16 +9,15 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class ProductCrossSellingAssignedProducts extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $crossSellingId = null,
-		public ?string $productId = null,
-		public ?string $productVersionId = null,
-		public ?int $position = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?Product $product = null,
-		public ?ProductCrossSelling $crossSelling = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $crossSellingId = null,
+        public ?string $productId = null,
+        public ?string $productVersionId = null,
+        public ?int $position = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?Product $product = null,
+        public ?ProductCrossSelling $crossSelling = null,
+    ) {}
 }

@@ -13,31 +13,26 @@ use Saloon\Http\Response;
  */
 class DeleteSalesChannelAnalytics extends Request
 {
-	protected Method $method = Method::DELETE;
+    protected Method $method = Method::DELETE;
 
+    public function resolveEndpoint(): string
+    {
+        return "/sales-channel-analytics/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/sales-channel-analytics/{$this->id}";
-	}
+    /**
+     * @param  string  $id  Identifier for the sales_channel_analytics
+     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     */
+    public function __construct(
+        protected string $id,
+        protected ?string $response = null,
+    ) {}
 
-
-	/**
-	 * @param string $id Identifier for the sales_channel_analytics
-	 * @param null|string $response Data format for response. Empty if none is provided.
-	 */
-	public function __construct(
-		protected string $id,
-		protected ?string $response = null,
-	) {
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['_response' => $this->response]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['_response' => $this->response]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

@@ -13,31 +13,26 @@ use Saloon\Http\Response;
  */
 class DeleteStateMachineTransition extends Request
 {
-	protected Method $method = Method::DELETE;
+    protected Method $method = Method::DELETE;
 
+    public function resolveEndpoint(): string
+    {
+        return "/state-machine-transition/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/state-machine-transition/{$this->id}";
-	}
+    /**
+     * @param  string  $id  Identifier for the state_machine_transition
+     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     */
+    public function __construct(
+        protected string $id,
+        protected ?string $response = null,
+    ) {}
 
-
-	/**
-	 * @param string $id Identifier for the state_machine_transition
-	 * @param null|string $response Data format for response. Empty if none is provided.
-	 */
-	public function __construct(
-		protected string $id,
-		protected ?string $response = null,
-	) {
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['_response' => $this->response]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['_response' => $this->response]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\Salutation;
  */
 class GetSalutation extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/salutation/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/salutation/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the salutation
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the salutation
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

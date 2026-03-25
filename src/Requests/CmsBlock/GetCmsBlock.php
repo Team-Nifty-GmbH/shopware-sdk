@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\CmsBlock;
  */
 class GetCmsBlock extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/cms-block/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/cms-block/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the cms_block
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the cms_block
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

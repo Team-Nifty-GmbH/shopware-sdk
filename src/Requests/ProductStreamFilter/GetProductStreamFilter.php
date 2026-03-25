@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\ProductStreamFilter;
  */
 class GetProductStreamFilter extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/product-stream-filter/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/product-stream-filter/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the product_stream_filter
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the product_stream_filter
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

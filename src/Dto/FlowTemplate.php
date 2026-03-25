@@ -9,12 +9,11 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class FlowTemplate extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $name = null,
-		public ?object $config = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $name = null,
+        public ?object $config = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+    ) {}
 }

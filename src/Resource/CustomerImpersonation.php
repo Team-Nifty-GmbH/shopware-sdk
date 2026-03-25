@@ -8,8 +8,8 @@ use TeamNiftyGmbH\Shopware\Requests\CustomerImpersonation\GenerateImitateCustome
 
 class CustomerImpersonation extends BaseResource
 {
-	public function generateImitateCustomerToken(array $data = []): Response
-	{
-		return $this->connector->send(new GenerateImitateCustomerToken($data));
-	}
+    public function generateImitateCustomerToken(array $data = []): Response
+    {
+        return $this->connector->send(new GenerateImitateCustomerToken($data));
+    }
 }

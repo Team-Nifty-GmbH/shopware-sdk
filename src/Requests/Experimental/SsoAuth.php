@@ -13,19 +13,14 @@ use Saloon\Http\Response;
  */
 class SsoAuth extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/oauth/sso/auth';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/oauth/sso/auth";
-	}
-
-
-	public function __construct()
-	{
-	}
-
+    public function __construct() {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

@@ -9,16 +9,15 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class DocumentBaseConfigSalesChannel extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $documentBaseConfigId = null,
-		public ?string $salesChannelId = null,
-		public ?string $documentTypeId = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?DocumentType $documentType = null,
-		public ?DocumentBaseConfig $documentBaseConfig = null,
-		public ?SalesChannel $salesChannel = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $documentBaseConfigId = null,
+        public ?string $salesChannelId = null,
+        public ?string $documentTypeId = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?DocumentType $documentType = null,
+        public ?DocumentBaseConfig $documentBaseConfig = null,
+        public ?SalesChannel $salesChannel = null,
+    ) {}
 }

@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\AppPaymentMethod;
  */
 class GetAppPaymentMethod extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/app-payment-method/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/app-payment-method/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the app_payment_method
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the app_payment_method
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

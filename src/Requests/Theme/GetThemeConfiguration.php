@@ -14,23 +14,16 @@ use TeamNiftyGmbH\Shopware\Dto\Theme;
  */
 class GetThemeConfiguration extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/_action/theme/{$this->themeId}/configuration";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/theme/{$this->themeId}/configuration";
-	}
-
-
-	/**
-	 * @param string $themeId
-	 */
-	public function __construct(
-		protected string $themeId,
-	) {
-	}
-
+    public function __construct(
+        protected string $themeId,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

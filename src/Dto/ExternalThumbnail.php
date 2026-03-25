@@ -10,10 +10,9 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class ExternalThumbnail extends SpatieData
 {
-	public function __construct(
-		public ?string $url = null,
-		public ?int $width = null,
-		public ?int $height = null,
-	) {
-	}
+    public function __construct(
+        public ?string $url = null,
+        public ?int $width = null,
+        public ?int $height = null,
+    ) {}
 }

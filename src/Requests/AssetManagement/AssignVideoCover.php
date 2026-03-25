@@ -5,8 +5,8 @@ namespace TeamNiftyGmbH\Shopware\Requests\AssetManagement;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Http\Response;
+use Saloon\Traits\Body\HasJsonBody;
 
 /**
  * assignVideoCover
@@ -16,32 +16,27 @@ use Saloon\Http\Response;
  */
 class AssignVideoCover extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::POST;
+    protected Method $method = Method::POST;
 
+    public function resolveEndpoint(): string
+    {
+        return "/_action/media/{$this->mediaId}/video-cover";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/media/{$this->mediaId}/video-cover";
-	}
+    /**
+     * @param  mixed  $mediaId  ID of the video media entity
+     */
+    public function __construct(
+        protected mixed $mediaId,
+        protected array $data = [],
+    ) {}
 
-
-	/**
-	 * @param mixed $mediaId ID of the video media entity
-	 */
-	public function __construct(
-		protected mixed $mediaId,
-		protected array $data = [],
-	) {
-	}
-
-
-	public function defaultBody(): array
-	{
-		return $this->data;
-	}
-
+    public function defaultBody(): array
+    {
+        return $this->data;
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

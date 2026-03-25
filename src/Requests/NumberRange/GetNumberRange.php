@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\NumberRange;
  */
 class GetNumberRange extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/number-range/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/number-range/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the number_range
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the number_range
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

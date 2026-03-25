@@ -6,8 +6,7 @@ use Spatie\LaravelData\Data as SpatieData;
 
 class OrderReturnLineItemReturn extends SpatieData
 {
-	public function __construct(
-		public ?object $shippingCosts = null,
-	) {
-	}
+    public function __construct(
+        public ?object $shippingCosts = null,
+    ) {}
 }

@@ -9,16 +9,15 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class CustomerWishlist extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $customerId = null,
-		public ?string $salesChannelId = null,
-		public ?object $customFields = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?array $products = null,
-		public ?Customer $customer = null,
-		public ?SalesChannel $salesChannel = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $customerId = null,
+        public ?string $salesChannelId = null,
+        public ?object $customFields = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?array $products = null,
+        public ?Customer $customer = null,
+        public ?SalesChannel $salesChannel = null,
+    ) {}
 }

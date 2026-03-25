@@ -9,24 +9,23 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class SalesChannelDomain extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $url = null,
-		public ?string $salesChannelId = null,
-		public ?string $languageId = null,
-		public ?string $currencyId = null,
-		public ?string $snippetSetId = null,
-		public ?MeasurementUnits $measurementUnits = null,
-		public ?bool $hreflangUseOnlyLocale = null,
-		public ?object $customFields = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?SalesChannel $salesChannel = null,
-		public ?Language $language = null,
-		public ?Currency $currency = null,
-		public ?SnippetSet $snippetSet = null,
-		public ?SalesChannel $salesChannelDefaultHreflang = null,
-		public ?array $productExports = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $url = null,
+        public ?string $salesChannelId = null,
+        public ?string $languageId = null,
+        public ?string $currencyId = null,
+        public ?string $snippetSetId = null,
+        public ?MeasurementUnits $measurementUnits = null,
+        public ?bool $hreflangUseOnlyLocale = null,
+        public ?object $customFields = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?SalesChannel $salesChannel = null,
+        public ?Language $language = null,
+        public ?Currency $currency = null,
+        public ?SnippetSet $snippetSet = null,
+        public ?SalesChannel $salesChannelDefaultHreflang = null,
+        public ?array $productExports = null,
+    ) {}
 }

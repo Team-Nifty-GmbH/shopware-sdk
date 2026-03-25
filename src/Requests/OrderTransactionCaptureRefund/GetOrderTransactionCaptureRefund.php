@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\OrderTransactionCaptureRefund;
  */
 class GetOrderTransactionCaptureRefund extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/order-transaction-capture-refund/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/order-transaction-capture-refund/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the order_transaction_capture_refund
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the order_transaction_capture_refund
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

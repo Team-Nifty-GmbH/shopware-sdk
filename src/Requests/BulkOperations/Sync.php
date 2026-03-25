@@ -5,8 +5,8 @@ namespace TeamNiftyGmbH\Shopware\Requests\BulkOperations;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Http\Response;
+use Saloon\Traits\Body\HasJsonBody;
 
 /**
  * sync
@@ -17,41 +17,35 @@ use Saloon\Http\Response;
  */
 class Sync extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::POST;
+    protected Method $method = Method::POST;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_action/sync';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/sync";
-	}
+    /**
+     * @param  null|bool  $failOnError  To continue upcoming actions on errors, set the `fail-on-error` header to `false`.
+     * @param  null|string  $indexingBehavior  Controls the indexing behavior.
+     *                                         - `disable-indexing`: Data indexing is completely disabled
+     */
+    public function __construct(
+        protected array $data = [],
+        protected ?bool $failOnError = null,
+        protected ?string $indexingBehavior = null,
+    ) {}
 
+    public function defaultBody(): array
+    {
+        return $this->data;
+    }
 
-	/**
-	 * @param null|bool $failOnError To continue upcoming actions on errors, set the `fail-on-error` header to `false`.
-	 * @param null|string $indexingBehavior Controls the indexing behavior.
-	 *     - `disable-indexing`: Data indexing is completely disabled
-	 */
-	public function __construct(
-		protected array $data = [],
-		protected ?bool $failOnError = null,
-		protected ?string $indexingBehavior = null,
-	) {
-	}
-
-
-	public function defaultBody(): array
-	{
-		return $this->data;
-	}
-
-
-	public function defaultHeaders(): array
-	{
-		return array_filter(['fail-on-error' => $this->failOnError, 'indexing-behavior' => $this->indexingBehavior]);
-	}
-
+    public function defaultHeaders(): array
+    {
+        return array_filter(['fail-on-error' => $this->failOnError, 'indexing-behavior' => $this->indexingBehavior]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

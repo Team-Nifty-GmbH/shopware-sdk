@@ -5,8 +5,8 @@ namespace TeamNiftyGmbH\Shopware\Requests\AppSystem;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Http\Response;
+use Saloon\Traits\Body\HasJsonBody;
 
 /**
  * managePrivileges
@@ -15,32 +15,24 @@ use Saloon\Http\Response;
  */
 class ManagePrivileges extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::PATCH;
+    protected Method $method = Method::PATCH;
 
+    public function resolveEndpoint(): string
+    {
+        return "/app-system/{$this->appName}/privileges";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/app-system/{$this->appName}/privileges";
-	}
+    public function __construct(
+        protected string $appName,
+        protected array $data = [],
+    ) {}
 
-
-	/**
-	 * @param string $appName
-	 */
-	public function __construct(
-		protected string $appName,
-		protected array $data = [],
-	) {
-	}
-
-
-	public function defaultBody(): array
-	{
-		return $this->data;
-	}
-
+    public function defaultBody(): array
+    {
+        return $this->data;
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

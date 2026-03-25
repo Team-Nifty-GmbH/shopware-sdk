@@ -5,8 +5,8 @@ namespace TeamNiftyGmbH\Shopware\Requests\AppSystem;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Http\Response;
+use Saloon\Traits\Body\HasJsonBody;
 
 /**
  * appSecretRotation
@@ -17,29 +17,23 @@ use Saloon\Http\Response;
  */
 class AppSecretRotation extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::POST;
+    protected Method $method = Method::POST;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_action/app-system/secret/rotate';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/app-system/secret/rotate";
-	}
+    public function __construct(
+        protected array $data = [],
+    ) {}
 
-
-	public function __construct(
-		protected array $data = [],
-	)
-	{
-	}
-
-
-	public function defaultBody(): array
-	{
-		return $this->data;
-	}
-
+    public function defaultBody(): array
+    {
+        return $this->data;
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

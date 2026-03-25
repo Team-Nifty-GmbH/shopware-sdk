@@ -9,10 +9,9 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class AggregationFilter extends SpatieData
 {
-	public function __construct(
-		public ?string $name = null,
-		public ?string $type = null,
-		public ?array $filter = null,
-	) {
-	}
+    public function __construct(
+        public ?string $name = null,
+        public ?string $type = null,
+        public ?array $filter = null,
+    ) {}
 }

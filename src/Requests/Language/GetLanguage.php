@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\Language;
  */
 class GetLanguage extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/language/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/language/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the language
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the language
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

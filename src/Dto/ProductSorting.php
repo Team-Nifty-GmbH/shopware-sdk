@@ -9,17 +9,16 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class ProductSorting extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?bool $locked = null,
-		public ?string $key = null,
-		public ?int $priority = null,
-		public ?bool $active = null,
-		public ?object $fields = null,
-		public ?string $label = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?object $translated = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?bool $locked = null,
+        public ?string $key = null,
+        public ?int $priority = null,
+        public ?bool $active = null,
+        public ?object $fields = null,
+        public ?string $label = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?object $translated = null,
+    ) {}
 }

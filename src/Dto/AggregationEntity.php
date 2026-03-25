@@ -9,11 +9,10 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class AggregationEntity extends SpatieData
 {
-	public function __construct(
-		public ?string $name = null,
-		public ?string $type = null,
-		public ?string $field = null,
-		public ?string $definition = null,
-	) {
-	}
+    public function __construct(
+        public ?string $name = null,
+        public ?string $type = null,
+        public ?string $field = null,
+        public ?string $definition = null,
+    ) {}
 }

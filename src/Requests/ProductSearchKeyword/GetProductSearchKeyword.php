@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\ProductSearchKeyword;
  */
 class GetProductSearchKeyword extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/product-search-keyword/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/product-search-keyword/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the product_search_keyword
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the product_search_keyword
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

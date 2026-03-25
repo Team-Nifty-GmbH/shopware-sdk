@@ -9,12 +9,11 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class MediaFolderConfigurationMediaThumbnailSize extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $mediaFolderConfigurationId = null,
-		public ?string $mediaThumbnailSizeId = null,
-		public ?MediaFolderConfiguration $mediaFolderConfiguration = null,
-		public ?MediaThumbnailSize $mediaThumbnailSize = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $mediaFolderConfigurationId = null,
+        public ?string $mediaThumbnailSizeId = null,
+        public ?MediaFolderConfiguration $mediaFolderConfiguration = null,
+        public ?MediaThumbnailSize $mediaThumbnailSize = null,
+    ) {}
 }

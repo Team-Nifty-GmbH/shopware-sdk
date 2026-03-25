@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\PaymentMethod;
  */
 class GetPaymentMethod extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/payment-method/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/payment-method/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the payment_method
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the payment_method
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

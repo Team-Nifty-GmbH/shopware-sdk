@@ -9,15 +9,14 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class ProductFeatureSet extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $name = null,
-		public ?string $description = null,
-		public ?object $features = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?object $translated = null,
-		public ?array $products = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $name = null,
+        public ?string $description = null,
+        public ?object $features = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?object $translated = null,
+        public ?array $products = null,
+    ) {}
 }

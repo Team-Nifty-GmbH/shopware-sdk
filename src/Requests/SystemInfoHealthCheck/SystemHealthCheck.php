@@ -11,29 +11,24 @@ use Saloon\Http\Response;
  */
 class SystemHealthCheck extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_info/system-health-check';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_info/system-health-check";
-	}
+    /**
+     * @param  null|bool  $verbose  Include detailed information in the response
+     */
+    public function __construct(
+        protected ?bool $verbose = null,
+    ) {}
 
-
-	/**
-	 * @param null|bool $verbose Include detailed information in the response
-	 */
-	public function __construct(
-		protected ?bool $verbose = null,
-	) {
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['verbose' => $this->verbose]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['verbose' => $this->verbose]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

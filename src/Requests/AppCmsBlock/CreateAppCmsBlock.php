@@ -5,8 +5,8 @@ namespace TeamNiftyGmbH\Shopware\Requests\AppCmsBlock;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Http\Response;
+use Saloon\Traits\Body\HasJsonBody;
 use TeamNiftyGmbH\Shopware\Dto\AppCmsBlock;
 
 /**
@@ -16,38 +16,32 @@ use TeamNiftyGmbH\Shopware\Dto\AppCmsBlock;
  */
 class CreateAppCmsBlock extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::POST;
+    protected Method $method = Method::POST;
 
+    public function resolveEndpoint(): string
+    {
+        return '/app-cms-block';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/app-cms-block";
-	}
+    /**
+     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     */
+    public function __construct(
+        protected array $data,
+        protected ?string $response = null,
+    ) {}
 
+    public function defaultBody(): array
+    {
+        return $this->data;
+    }
 
-	/**
-	 * @param null|string $response Data format for response. Empty if none is provided.
-	 */
-	public function __construct(
-		protected array $data,
-		protected ?string $response = null,
-	) {
-	}
-
-
-	public function defaultBody(): array
-	{
-		return $this->data;
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['_response' => $this->response]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['_response' => $this->response]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

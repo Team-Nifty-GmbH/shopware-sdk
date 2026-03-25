@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\DocumentType;
  */
 class GetDocumentType extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/document-type/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/document-type/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the document_type
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the document_type
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

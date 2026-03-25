@@ -34,7 +34,7 @@ test('GetProductList builds query params', function (): void {
 });
 
 test('GetProductList excludes null query params', function (): void {
-    $request = new GetProductList();
+    $request = new GetProductList;
 
     expect($request->defaultQuery())->toBe([]);
 });

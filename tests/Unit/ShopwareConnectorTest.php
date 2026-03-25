@@ -1,5 +1,13 @@
 <?php
 
+use TeamNiftyGmbH\Shopware\Resource\BulkOperations;
+use TeamNiftyGmbH\Shopware\Resource\Category;
+use TeamNiftyGmbH\Shopware\Resource\Customer;
+use TeamNiftyGmbH\Shopware\Resource\Media;
+use TeamNiftyGmbH\Shopware\Resource\Order;
+use TeamNiftyGmbH\Shopware\Resource\OrderManagement;
+use TeamNiftyGmbH\Shopware\Resource\Product;
+use TeamNiftyGmbH\Shopware\Resource\SalesChannel;
 use TeamNiftyGmbH\Shopware\Shopware;
 
 test('connector can be instantiated', function (): void {
@@ -62,12 +70,12 @@ test('all resource methods return correct types', function (): void {
         clientSecret: 'test',
     );
 
-    expect($shopware->product())->toBeInstanceOf(TeamNiftyGmbH\Shopware\Resource\Product::class)
-        ->and($shopware->order())->toBeInstanceOf(TeamNiftyGmbH\Shopware\Resource\Order::class)
-        ->and($shopware->customer())->toBeInstanceOf(TeamNiftyGmbH\Shopware\Resource\Customer::class)
-        ->and($shopware->category())->toBeInstanceOf(TeamNiftyGmbH\Shopware\Resource\Category::class)
-        ->and($shopware->media())->toBeInstanceOf(TeamNiftyGmbH\Shopware\Resource\Media::class)
-        ->and($shopware->salesChannel())->toBeInstanceOf(TeamNiftyGmbH\Shopware\Resource\SalesChannel::class)
-        ->and($shopware->orderManagement())->toBeInstanceOf(TeamNiftyGmbH\Shopware\Resource\OrderManagement::class)
-        ->and($shopware->bulkOperations())->toBeInstanceOf(TeamNiftyGmbH\Shopware\Resource\BulkOperations::class);
+    expect($shopware->product())->toBeInstanceOf(Product::class)
+        ->and($shopware->order())->toBeInstanceOf(Order::class)
+        ->and($shopware->customer())->toBeInstanceOf(Customer::class)
+        ->and($shopware->category())->toBeInstanceOf(Category::class)
+        ->and($shopware->media())->toBeInstanceOf(Media::class)
+        ->and($shopware->salesChannel())->toBeInstanceOf(SalesChannel::class)
+        ->and($shopware->orderManagement())->toBeInstanceOf(OrderManagement::class)
+        ->and($shopware->bulkOperations())->toBeInstanceOf(BulkOperations::class);
 });

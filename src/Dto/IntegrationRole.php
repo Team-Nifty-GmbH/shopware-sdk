@@ -9,12 +9,11 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class IntegrationRole extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $integrationId = null,
-		public ?string $aclRoleId = null,
-		public ?Integration $integration = null,
-		public ?AclRole $role = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $integrationId = null,
+        public ?string $aclRoleId = null,
+        public ?Integration $integration = null,
+        public ?AclRole $role = null,
+    ) {}
 }

@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\ProductVisibility;
  */
 class GetProductVisibility extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/product-visibility/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/product-visibility/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the product_visibility
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the product_visibility
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

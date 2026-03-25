@@ -9,12 +9,11 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class ThemeMedia extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $themeId = null,
-		public ?string $mediaId = null,
-		public ?Theme $theme = null,
-		public ?Media $media = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $themeId = null,
+        public ?string $mediaId = null,
+        public ?Theme $theme = null,
+        public ?Media $media = null,
+    ) {}
 }

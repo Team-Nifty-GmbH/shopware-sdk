@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\ImportExportProfile;
  */
 class GetImportExportProfile extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/import-export-profile/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/import-export-profile/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the import_export_profile
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the import_export_profile
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

@@ -9,14 +9,13 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class UserConfig extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $userId = null,
-		public ?string $key = null,
-		public ?object $value = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?User $user = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $userId = null,
+        public ?string $key = null,
+        public ?object $value = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?User $user = null,
+    ) {}
 }

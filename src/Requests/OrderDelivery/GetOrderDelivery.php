@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\OrderDelivery;
  */
 class GetOrderDelivery extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/order-delivery/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/order-delivery/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the order_delivery
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the order_delivery
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

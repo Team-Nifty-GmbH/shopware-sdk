@@ -9,13 +9,12 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class Resource extends SpatieData
 {
-	public function __construct(
-		public ?string $type = null,
-		public ?string $id = null,
-		public ?Attributes $attributes = null,
-		public ?Relationships $relationships = null,
-		public ?Links $links = null,
-		public ?Meta $meta = null,
-	) {
-	}
+    public function __construct(
+        public ?string $type = null,
+        public ?string $id = null,
+        public ?Attributes $attributes = null,
+        public ?Relationships $relationships = null,
+        public ?Links $links = null,
+        public ?Meta $meta = null,
+    ) {}
 }

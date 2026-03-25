@@ -9,13 +9,12 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class ProductCustomFieldSet extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $productId = null,
-		public ?string $customFieldSetId = null,
-		public ?string $productVersionId = null,
-		public ?Product $product = null,
-		public ?CustomFieldSet $customFieldSet = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $productId = null,
+        public ?string $customFieldSetId = null,
+        public ?string $productVersionId = null,
+        public ?Product $product = null,
+        public ?CustomFieldSet $customFieldSet = null,
+    ) {}
 }

@@ -186,7 +186,7 @@ class Shopware extends Connector implements HasPagination
         protected string $clientSecret,
         protected ?string $tokenUrl = null,
         protected ?string $refreshUrl = null,
-        protected ?array $scopes = ['write' => 'Full write access'],
+        protected ?array $scopes = [],
     ) {
         $this->baseUrl = rtrim($this->baseUrl, '/');
         $this->tokenUrl ??= $this->baseUrl . '/oauth/token';
@@ -986,5 +986,12 @@ class Shopware extends Connector implements HasPagination
                 return $request;
             }
         };
+    }
+
+    protected function defaultHeaders(): array
+    {
+        return [
+            'Accept' => 'application/json',
+        ];
     }
 }

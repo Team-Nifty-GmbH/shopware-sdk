@@ -9,16 +9,15 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class AppFlowEvent extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $appId = null,
-		public ?string $name = null,
-		public ?array $aware = null,
-		public ?object $customFields = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?App $app = null,
-		public ?array $flows = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $appId = null,
+        public ?string $name = null,
+        public ?array $aware = null,
+        public ?object $customFields = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?App $app = null,
+        public ?array $flows = null,
+    ) {}
 }

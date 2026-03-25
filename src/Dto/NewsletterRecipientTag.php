@@ -9,12 +9,11 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class NewsletterRecipientTag extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $newsletterRecipientId = null,
-		public ?string $tagId = null,
-		public ?NewsletterRecipient $newsletterRecipient = null,
-		public ?Tag $tag = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $newsletterRecipientId = null,
+        public ?string $tagId = null,
+        public ?NewsletterRecipient $newsletterRecipient = null,
+        public ?Tag $tag = null,
+    ) {}
 }

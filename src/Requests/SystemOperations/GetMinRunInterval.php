@@ -13,19 +13,14 @@ use Saloon\Http\Response;
  */
 class GetMinRunInterval extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_action/scheduled-task/min-run-interval';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/scheduled-task/min-run-interval";
-	}
-
-
-	public function __construct()
-	{
-	}
-
+    public function __construct() {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

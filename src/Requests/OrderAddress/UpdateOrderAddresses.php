@@ -5,8 +5,8 @@ namespace TeamNiftyGmbH\Shopware\Requests\OrderAddress;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Http\Response;
+use Saloon\Traits\Body\HasJsonBody;
 use TeamNiftyGmbH\Shopware\Dto\OrderAddress;
 
 /**
@@ -17,32 +17,27 @@ use TeamNiftyGmbH\Shopware\Dto\OrderAddress;
  */
 class UpdateOrderAddresses extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::POST;
+    protected Method $method = Method::POST;
 
+    public function resolveEndpoint(): string
+    {
+        return "/_action/order/{$this->orderId}/order-address";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/order/{$this->orderId}/order-address";
-	}
+    /**
+     * @param  string  $orderId  Identifier of the order.
+     */
+    public function __construct(
+        protected string $orderId,
+        protected array $data,
+    ) {}
 
-
-	/**
-	 * @param string $orderId Identifier of the order.
-	 */
-	public function __construct(
-		protected string $orderId,
-		protected array $data,
-	) {
-	}
-
-
-	public function defaultBody(): array
-	{
-		return $this->data;
-	}
-
+    public function defaultBody(): array
+    {
+        return $this->data;
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

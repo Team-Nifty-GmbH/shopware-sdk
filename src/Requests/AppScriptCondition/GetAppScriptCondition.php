@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\AppScriptCondition;
  */
 class GetAppScriptCondition extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/app-script-condition/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/app-script-condition/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the app_script_condition
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the app_script_condition
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

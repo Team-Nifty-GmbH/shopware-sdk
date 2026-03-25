@@ -9,18 +9,17 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class MainCategory extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $productId = null,
-		public ?string $productVersionId = null,
-		public ?string $categoryId = null,
-		public ?string $categoryVersionId = null,
-		public ?string $salesChannelId = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?Product $product = null,
-		public ?Category $category = null,
-		public ?SalesChannel $salesChannel = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $productId = null,
+        public ?string $productVersionId = null,
+        public ?string $categoryId = null,
+        public ?string $categoryVersionId = null,
+        public ?string $salesChannelId = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?Product $product = null,
+        public ?Category $category = null,
+        public ?SalesChannel $salesChannel = null,
+    ) {}
 }

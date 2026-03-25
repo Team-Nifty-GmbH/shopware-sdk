@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\ProductManufacturer;
  */
 class GetProductManufacturer extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/product-manufacturer/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/product-manufacturer/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the product_manufacturer
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the product_manufacturer
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

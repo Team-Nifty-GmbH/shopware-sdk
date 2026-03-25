@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\Flow;
  */
 class GetFlow extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/flow/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/flow/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the flow
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the flow
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

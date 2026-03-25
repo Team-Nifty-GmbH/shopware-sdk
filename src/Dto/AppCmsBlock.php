@@ -9,18 +9,17 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class AppCmsBlock extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $name = null,
-		public ?object $block = null,
-		public ?string $template = null,
-		public ?string $styles = null,
-		public ?string $label = null,
-		public ?string $appId = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?object $translated = null,
-		public ?App $app = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $name = null,
+        public ?object $block = null,
+        public ?string $template = null,
+        public ?string $styles = null,
+        public ?string $label = null,
+        public ?string $appId = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?object $translated = null,
+        public ?App $app = null,
+    ) {}
 }

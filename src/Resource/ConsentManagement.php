@@ -10,20 +10,18 @@ use TeamNiftyGmbH\Shopware\Requests\ConsentManagement\RevokeConsent;
 
 class ConsentManagement extends BaseResource
 {
-	public function acceptConsent(array $data = []): Response
-	{
-		return $this->connector->send(new AcceptConsent($data));
-	}
+    public function acceptConsent(array $data = []): Response
+    {
+        return $this->connector->send(new AcceptConsent($data));
+    }
 
+    public function fetchConsents(): Response
+    {
+        return $this->connector->send(new FetchConsents);
+    }
 
-	public function fetchConsents(): Response
-	{
-		return $this->connector->send(new FetchConsents());
-	}
-
-
-	public function revokeConsent(array $data = []): Response
-	{
-		return $this->connector->send(new RevokeConsent($data));
-	}
+    public function revokeConsent(array $data = []): Response
+    {
+        return $this->connector->send(new RevokeConsent($data));
+    }
 }

@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\ProductConfiguratorSetting;
  */
 class GetProductConfiguratorSetting extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/product-configurator-setting/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/product-configurator-setting/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the product_configurator_setting
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the product_configurator_setting
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

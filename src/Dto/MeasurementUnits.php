@@ -9,9 +9,8 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class MeasurementUnits extends SpatieData
 {
-	public function __construct(
-		public ?string $system = null,
-		public ?object $units = null,
-	) {
-	}
+    public function __construct(
+        public ?string $system = null,
+        public ?object $units = null,
+    ) {}
 }

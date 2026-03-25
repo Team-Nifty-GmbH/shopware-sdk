@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\Webhook;
  */
 class GetWebhook extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/webhook/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/webhook/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the webhook
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the webhook
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

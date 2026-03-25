@@ -9,16 +9,15 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class Script extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $script = null,
-		public ?string $hook = null,
-		public ?string $name = null,
-		public ?bool $active = null,
-		public ?string $appId = null,
-		public ?string $createdAt = null,
-		public ?string $updatedAt = null,
-		public ?App $app = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $script = null,
+        public ?string $hook = null,
+        public ?string $name = null,
+        public ?bool $active = null,
+        public ?string $appId = null,
+        public ?string $createdAt = null,
+        public ?string $updatedAt = null,
+        public ?App $app = null,
+    ) {}
 }

@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\MediaThumbnail;
  */
 class GetMediaThumbnail extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/media-thumbnail/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/media-thumbnail/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the media_thumbnail
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the media_thumbnail
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

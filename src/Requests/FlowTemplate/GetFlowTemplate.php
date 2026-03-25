@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\FlowTemplate;
  */
 class GetFlowTemplate extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/flow-template/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/flow-template/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the flow_template
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the flow_template
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

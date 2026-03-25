@@ -20,7 +20,7 @@ use TeamNiftyGmbH\Shopware\Support\CriteriaBuilder;
 function fixture(string $name): array
 {
     return json_decode(
-        file_get_contents(__DIR__ . '/../Fixtures/' . $name . '.json'),
+        file_get_contents(__DIR__.'/../Fixtures/'.$name.'.json'),
         true
     );
 }

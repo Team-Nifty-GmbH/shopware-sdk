@@ -5,8 +5,8 @@ namespace TeamNiftyGmbH\Shopware\Requests\SystemOperations;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Http\Response;
+use Saloon\Traits\Body\HasJsonBody;
 
 /**
  * iterate
@@ -18,32 +18,27 @@ use Saloon\Http\Response;
  */
 class Iterate extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::POST;
+    protected Method $method = Method::POST;
 
+    public function resolveEndpoint(): string
+    {
+        return "/_action/indexing/{$this->indexer}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/indexing/{$this->indexer}";
-	}
+    /**
+     * @param  string  $indexer  Name of the indexer to iterate.
+     */
+    public function __construct(
+        protected string $indexer,
+        protected array $data = [],
+    ) {}
 
-
-	/**
-	 * @param string $indexer Name of the indexer to iterate.
-	 */
-	public function __construct(
-		protected string $indexer,
-		protected array $data = [],
-	) {
-	}
-
-
-	public function defaultBody(): array
-	{
-		return $this->data;
-	}
-
+    public function defaultBody(): array
+    {
+        return $this->data;
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\UserRecovery;
  */
 class GetUserRecovery extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/user-recovery/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/user-recovery/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the user_recovery
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the user_recovery
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

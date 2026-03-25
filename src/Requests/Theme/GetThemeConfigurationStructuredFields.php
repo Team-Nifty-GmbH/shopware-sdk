@@ -14,23 +14,16 @@ use TeamNiftyGmbH\Shopware\Dto\Theme;
  */
 class GetThemeConfigurationStructuredFields extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/_action/theme/{$this->themeId}/structured-fields";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/theme/{$this->themeId}/structured-fields";
-	}
-
-
-	/**
-	 * @param string $themeId
-	 */
-	public function __construct(
-		protected string $themeId,
-	) {
-	}
-
+    public function __construct(
+        protected string $themeId,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

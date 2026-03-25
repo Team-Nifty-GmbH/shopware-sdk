@@ -5,8 +5,8 @@ namespace TeamNiftyGmbH\Shopware\Requests\ProductSorting;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Http\Response;
+use Saloon\Traits\Body\HasJsonBody;
 use TeamNiftyGmbH\Shopware\Dto\ProductSorting;
 
 /**
@@ -16,38 +16,32 @@ use TeamNiftyGmbH\Shopware\Dto\ProductSorting;
  */
 class CreateProductSorting extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::POST;
+    protected Method $method = Method::POST;
 
+    public function resolveEndpoint(): string
+    {
+        return '/product-sorting';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/product-sorting";
-	}
+    /**
+     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     */
+    public function __construct(
+        protected array $data,
+        protected ?string $response = null,
+    ) {}
 
+    public function defaultBody(): array
+    {
+        return $this->data;
+    }
 
-	/**
-	 * @param null|string $response Data format for response. Empty if none is provided.
-	 */
-	public function __construct(
-		protected array $data,
-		protected ?string $response = null,
-	) {
-	}
-
-
-	public function defaultBody(): array
-	{
-		return $this->data;
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['_response' => $this->response]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['_response' => $this->response]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\ProductSearchConfig;
  */
 class GetProductSearchConfig extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/product-search-config/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/product-search-config/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the product_search_config
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the product_search_config
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

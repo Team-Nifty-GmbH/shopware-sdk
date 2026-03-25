@@ -13,29 +13,24 @@ use Saloon\Http\Response;
  */
 class ClearCacheDelayed extends Request
 {
-	protected Method $method = Method::DELETE;
+    protected Method $method = Method::DELETE;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_action/cache-delayed';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_action/cache-delayed";
-	}
+    /**
+     * @param  null|bool  $refreshOpenSearch  This parameter indicates that in addition to invalidating the delayed caches, the opensearch indices will also be refreshed, which should lead to a clean state on the next read requests. When OpenSearch is not used this parameter will be ignored.
+     */
+    public function __construct(
+        protected ?bool $refreshOpenSearch = null,
+    ) {}
 
-
-	/**
-	 * @param null|bool $refreshOpenSearch This parameter indicates that in addition to invalidating the delayed caches, the opensearch indices will also be refreshed, which should lead to a clean state on the next read requests. When OpenSearch is not used this parameter will be ignored.
-	 */
-	public function __construct(
-		protected ?bool $refreshOpenSearch = null,
-	) {
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['refreshOpenSearch' => $this->refreshOpenSearch]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['refreshOpenSearch' => $this->refreshOpenSearch]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

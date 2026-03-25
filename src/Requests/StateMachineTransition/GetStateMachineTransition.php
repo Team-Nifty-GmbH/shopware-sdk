@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\StateMachineTransition;
  */
 class GetStateMachineTransition extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/state-machine-transition/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/state-machine-transition/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the state_machine_transition
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the state_machine_transition
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

@@ -6,10 +6,9 @@ use Spatie\LaravelData\Data as SpatieData;
 
 class SubscriptionTagMapping extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $subscriptionId = null,
-		public ?string $tagId = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $subscriptionId = null,
+        public ?string $tagId = null,
+    ) {}
 }

@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\MeasurementDisplayUnit;
  */
 class GetMeasurementDisplayUnit extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/measurement-display-unit/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/measurement-display-unit/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the measurement_display_unit
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the measurement_display_unit
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

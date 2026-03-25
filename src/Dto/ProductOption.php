@@ -9,13 +9,12 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class ProductOption extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $productId = null,
-		public ?string $productVersionId = null,
-		public ?string $optionId = null,
-		public ?Product $product = null,
-		public ?PropertyGroupOption $option = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $productId = null,
+        public ?string $productVersionId = null,
+        public ?string $optionId = null,
+        public ?Product $product = null,
+        public ?PropertyGroupOption $option = null,
+    ) {}
 }

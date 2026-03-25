@@ -9,12 +9,11 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class RuleTag extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $ruleId = null,
-		public ?string $tagId = null,
-		public ?Rule $rule = null,
-		public ?Tag $tag = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $ruleId = null,
+        public ?string $tagId = null,
+        public ?Rule $rule = null,
+        public ?Tag $tag = null,
+    ) {}
 }

@@ -13,19 +13,14 @@ use Saloon\Http\Response;
  */
 class GetMessageStats extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return '/_info/message-stats.json';
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/_info/message-stats.json";
-	}
-
-
-	public function __construct()
-	{
-	}
-
+    public function __construct() {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

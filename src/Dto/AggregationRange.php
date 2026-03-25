@@ -12,11 +12,10 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class AggregationRange extends SpatieData
 {
-	public function __construct(
-		public ?string $name = null,
-		public ?string $type = null,
-		public ?string $field = null,
-		public ?array $ranges = null,
-	) {
-	}
+    public function __construct(
+        public ?string $name = null,
+        public ?string $type = null,
+        public ?string $field = null,
+        public ?array $ranges = null,
+    ) {}
 }

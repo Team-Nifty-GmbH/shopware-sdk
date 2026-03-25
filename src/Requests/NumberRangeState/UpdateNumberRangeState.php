@@ -5,8 +5,8 @@ namespace TeamNiftyGmbH\Shopware\Requests\NumberRangeState;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
-use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Http\Response;
+use Saloon\Traits\Body\HasJsonBody;
 use TeamNiftyGmbH\Shopware\Dto\NumberRangeState;
 
 /**
@@ -16,40 +16,34 @@ use TeamNiftyGmbH\Shopware\Dto\NumberRangeState;
  */
 class UpdateNumberRangeState extends Request implements HasBody
 {
-	use HasJsonBody;
+    use HasJsonBody;
 
-	protected Method $method = Method::PATCH;
+    protected Method $method = Method::PATCH;
 
+    public function resolveEndpoint(): string
+    {
+        return "/number-range-state/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/number-range-state/{$this->id}";
-	}
+    /**
+     * @param  string  $id  Identifier for the number_range_state
+     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     */
+    public function __construct(
+        protected string $id,
+        protected array $data,
+        protected ?string $response = null,
+    ) {}
 
+    public function defaultBody(): array
+    {
+        return $this->data;
+    }
 
-	/**
-	 * @param string $id Identifier for the number_range_state
-	 * @param null|string $response Data format for response. Empty if none is provided.
-	 */
-	public function __construct(
-		protected string $id,
-		protected array $data,
-		protected ?string $response = null,
-	) {
-	}
-
-
-	public function defaultBody(): array
-	{
-		return $this->data;
-	}
-
-
-	public function defaultQuery(): array
-	{
-		return array_filter(['_response' => $this->response]);
-	}
-
+    public function defaultQuery(): array
+    {
+        return array_filter(['_response' => $this->response]);
+    }
 
     public function createDtoFromResponse(Response $response): mixed
     {

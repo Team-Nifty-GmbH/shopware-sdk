@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\Country;
  */
 class GetCountry extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/country/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/country/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the country
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the country
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

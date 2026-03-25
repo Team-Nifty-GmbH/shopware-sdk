@@ -6,8 +6,7 @@ use Spatie\LaravelData\Data as SpatieData;
 
 class CartItems extends SpatieData
 {
-	public function __construct(
-		public ?object $items = null,
-	) {
-	}
+    public function __construct(
+        public ?object $items = null,
+    ) {}
 }

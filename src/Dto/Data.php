@@ -10,7 +10,5 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class Data extends SpatieData
 {
-	public function __construct()
-	{
-	}
+    public function __construct() {}
 }

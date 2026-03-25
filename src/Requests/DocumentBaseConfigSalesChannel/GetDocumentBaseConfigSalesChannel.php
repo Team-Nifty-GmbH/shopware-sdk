@@ -14,23 +14,19 @@ use TeamNiftyGmbH\Shopware\Dto\DocumentBaseConfigSalesChannel;
  */
 class GetDocumentBaseConfigSalesChannel extends Request
 {
-	protected Method $method = Method::GET;
+    protected Method $method = Method::GET;
 
+    public function resolveEndpoint(): string
+    {
+        return "/document-base-config-sales-channel/{$this->id}";
+    }
 
-	public function resolveEndpoint(): string
-	{
-		return "/document-base-config-sales-channel/{$this->id}";
-	}
-
-
-	/**
-	 * @param string $id Identifier for the document_base_config_sales_channel
-	 */
-	public function __construct(
-		protected string $id,
-	) {
-	}
-
+    /**
+     * @param  string  $id  Identifier for the document_base_config_sales_channel
+     */
+    public function __construct(
+        protected string $id,
+    ) {}
 
     public function createDtoFromResponse(Response $response): mixed
     {

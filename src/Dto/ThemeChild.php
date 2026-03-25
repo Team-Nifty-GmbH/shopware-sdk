@@ -9,12 +9,11 @@ use Spatie\LaravelData\Data as SpatieData;
  */
 class ThemeChild extends SpatieData
 {
-	public function __construct(
-		public ?string $id = null,
-		public ?string $parentId = null,
-		public ?string $childId = null,
-		public ?Theme $parentTheme = null,
-		public ?Theme $childTheme = null,
-	) {
-	}
+    public function __construct(
+        public ?string $id = null,
+        public ?string $parentId = null,
+        public ?string $childId = null,
+        public ?Theme $parentTheme = null,
+        public ?Theme $childTheme = null,
+    ) {}
 }
