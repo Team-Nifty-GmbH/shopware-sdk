@@ -4,6 +4,7 @@ namespace TeamNiftyGmbH\Shopware;
 
 use Saloon\Helpers\OAuth2\OAuthConfig;
 use Saloon\Http\Connector;
+use Saloon\Http\PendingRequest;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\PaginationPlugin\Contracts\HasPagination;
@@ -189,14 +190,14 @@ class Shopware extends Connector implements HasPagination
         protected ?array $scopes = [],
     ) {
         $this->baseUrl = rtrim($this->baseUrl, '/');
-        $this->tokenUrl ??= $this->baseUrl . '/oauth/token';
+        $this->tokenUrl ??= $this->baseUrl.'/oauth/token';
     }
 
     /**
      * Boot the connector. Called before every request.
      * Automatically authenticates with OAuth2 client credentials if not yet authenticated.
      */
-    public function boot(\Saloon\Http\PendingRequest $pendingRequest): void
+    public function boot(PendingRequest $pendingRequest): void
     {
         if ($pendingRequest->hasMockClient()) {
             return;
