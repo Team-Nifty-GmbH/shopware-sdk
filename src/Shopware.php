@@ -58,6 +58,7 @@ use TeamNiftyGmbH\Shopware\Resource\Experimental;
 use TeamNiftyGmbH\Shopware\Resource\Flow;
 use TeamNiftyGmbH\Shopware\Resource\FlowSequence;
 use TeamNiftyGmbH\Shopware\Resource\FlowTemplate;
+use TeamNiftyGmbH\Shopware\Resource\GenericEntity;
 use TeamNiftyGmbH\Shopware\Resource\ImportExportFile;
 use TeamNiftyGmbH\Shopware\Resource\ImportExportLog;
 use TeamNiftyGmbH\Shopware\Resource\ImportExportProfile;
@@ -435,6 +436,11 @@ class Shopware extends Connector implements HasPagination
     public function emailSupportValidation(): EmailSupportValidation
     {
         return new EmailSupportValidation($this);
+    }
+
+    public function entity(string $entityName): GenericEntity
+    {
+        return new GenericEntity($this, $entityName);
     }
 
     public function experimental(): Experimental
