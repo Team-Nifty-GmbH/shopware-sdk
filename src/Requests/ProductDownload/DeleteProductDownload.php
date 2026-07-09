@@ -22,16 +22,16 @@ class DeleteProductDownload extends Request
 
     /**
      * @param  string  $id  Identifier for the product_download
-     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     * @param  null|string  $responseFormat  Data format for response. Empty if none is provided.
      */
     public function __construct(
         protected string $id,
-        protected ?string $response = null,
+        protected ?string $responseFormat = null,
     ) {}
 
     public function defaultQuery(): array
     {
-        return array_filter(['_response' => $this->response]);
+        return array_filter(['_response' => $this->responseFormat]);
     }
 
     public function createDtoFromResponse(Response $response): mixed

@@ -27,12 +27,12 @@ class UpdateProductCrossSellingAssignedProducts extends Request implements HasBo
 
     /**
      * @param  string  $id  Identifier for the product_cross_selling_assigned_products
-     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     * @param  null|string  $responseFormat  Data format for response. Empty if none is provided.
      */
     public function __construct(
         protected string $id,
         protected array $data,
-        protected ?string $response = null,
+        protected ?string $responseFormat = null,
     ) {}
 
     public function defaultBody(): array
@@ -42,7 +42,7 @@ class UpdateProductCrossSellingAssignedProducts extends Request implements HasBo
 
     public function defaultQuery(): array
     {
-        return array_filter(['_response' => $this->response]);
+        return array_filter(['_response' => $this->responseFormat]);
     }
 
     public function createDtoFromResponse(Response $response): mixed

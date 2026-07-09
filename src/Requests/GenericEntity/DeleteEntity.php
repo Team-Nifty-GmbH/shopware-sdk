@@ -12,7 +12,7 @@ class DeleteEntity extends Request
     public function __construct(
         protected string $entityName,
         protected string $id,
-        protected ?string $response = null,
+        protected ?string $responseFormat = null,
     ) {}
 
     public function resolveEndpoint(): string
@@ -22,6 +22,6 @@ class DeleteEntity extends Request
 
     public function defaultQuery(): array
     {
-        return array_filter(['_response' => $this->response]);
+        return array_filter(['_response' => $this->responseFormat]);
     }
 }

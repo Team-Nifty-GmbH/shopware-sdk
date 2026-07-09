@@ -26,11 +26,11 @@ class CreateProductCrossSelling extends Request implements HasBody
     }
 
     /**
-     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     * @param  null|string  $responseFormat  Data format for response. Empty if none is provided.
      */
     public function __construct(
         protected array $data,
-        protected ?string $response = null,
+        protected ?string $responseFormat = null,
     ) {}
 
     public function defaultBody(): array
@@ -40,7 +40,7 @@ class CreateProductCrossSelling extends Request implements HasBody
 
     public function defaultQuery(): array
     {
-        return array_filter(['_response' => $this->response]);
+        return array_filter(['_response' => $this->responseFormat]);
     }
 
     public function createDtoFromResponse(Response $response): mixed

@@ -17,7 +17,7 @@ class UpdateEntity extends Request implements HasBody
         protected string $entityName,
         protected string $id,
         protected array $data,
-        protected ?string $response = null,
+        protected ?string $responseFormat = null,
     ) {}
 
     public function resolveEndpoint(): string
@@ -32,6 +32,6 @@ class UpdateEntity extends Request implements HasBody
 
     public function defaultQuery(): array
     {
-        return array_filter(['_response' => $this->response]);
+        return array_filter(['_response' => $this->responseFormat]);
     }
 }
