@@ -2,6 +2,7 @@
 
 namespace TeamNiftyGmbH\Shopware;
 
+use Saloon\Contracts\OAuthAuthenticator;
 use Saloon\Helpers\OAuth2\OAuthConfig;
 use Saloon\Http\Connector;
 use Saloon\Http\PendingRequest;
@@ -176,6 +177,8 @@ class Shopware extends Connector implements HasPagination
 {
     use ClientCredentialsGrant;
 
+    protected ?OAuthAuthenticator $cachedAuthenticator = null;
+
     /**
      * @param  string  $baseUrl  The base URL of the Shopware API (e.g. https://shop.example.com/api)
      * @param  null|string  $tokenUrl  Defaults to {baseUrl}/oauth/token
@@ -204,9 +207,19 @@ class Shopware extends Connector implements HasPagination
             return;
         }
 
-        if (! $pendingRequest->headers()->get('Authorization') && ! str_contains($pendingRequest->getUrl() ?? '', '/oauth/token')) {
-            $this->authenticate($this->getAccessToken());
+        if ($pendingRequest->headers()->get('Authorization') || str_contains($pendingRequest->getUrl() ?? '', '/oauth/token')) {
+            return;
         }
+
+        // Fetch a token once and reuse it, refreshing only when it expires.
+        if ($this->cachedAuthenticator === null || $this->cachedAuthenticator->hasExpired()) {
+            $this->cachedAuthenticator = $this->getAccessToken();
+        }
+
+        // Authenticate the current pending request. Authenticating the connector
+        // here would only apply to later requests, leaving the first request
+        // without an Authorization header.
+        $pendingRequest->authenticate($this->cachedAuthenticator);
     }
 
     public function resolveBaseUrl(): string
