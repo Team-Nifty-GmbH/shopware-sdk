@@ -20,6 +20,19 @@ test('connector can be instantiated', function (): void {
     expect($shopware)->toBeInstanceOf(Shopware::class);
 });
 
+test('oauth config allows the absolute token endpoint', function (): void {
+    $shopware = new Shopware(
+        baseUrl: 'https://shop.example.com/api',
+        clientId: 'test-client-id',
+        clientSecret: 'test-client-secret',
+    );
+
+    $config = $shopware->defaultOauthConfig();
+
+    expect($config->getAllowBaseUrlOverride())->toBeTrue()
+        ->and($config->getTokenEndpoint())->toBe('https://shop.example.com/api/oauth/token');
+});
+
 test('base url is resolved correctly', function (): void {
     $shopware = new Shopware(
         baseUrl: 'https://shop.example.com/api',
