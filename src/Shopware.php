@@ -216,11 +216,15 @@ class Shopware extends Connector implements HasPagination
 
     public function defaultOauthConfig(): OAuthConfig
     {
+        // The token endpoint is an absolute URL ({baseUrl}/oauth/token). Saloon's
+        // SSRF guard rejects absolute endpoints unless the override is allowed;
+        // the token URL is derived from the trusted base URL, so allow it.
         return OAuthConfig::make()
             ->setClientId($this->clientId)
             ->setClientSecret($this->clientSecret)
             ->setDefaultScopes($this->scopes)
-            ->setTokenEndpoint($this->tokenUrl);
+            ->setTokenEndpoint($this->tokenUrl)
+            ->setAllowBaseUrlOverride(true);
     }
 
     public function aclRole(): AclRole
