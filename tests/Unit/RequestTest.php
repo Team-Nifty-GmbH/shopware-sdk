@@ -49,9 +49,17 @@ test('CreateProduct is POST with body', function (): void {
 });
 
 test('CreateProduct passes response query param', function (): void {
-    $request = new CreateProduct(['name' => 'Test'], response: 'detail');
+    $request = new CreateProduct(['name' => 'Test'], responseFormat: 'detail');
 
     expect($request->defaultQuery())->toBe(['_response' => 'detail']);
+});
+
+test('a response format does not shadow Saloon\'s response class', function (): void {
+    // The _response query format must not be interpreted as the response class
+    // (a $response property would collide with Saloon's HasCustomResponses).
+    $request = new CreateProduct(['name' => 'Test'], responseFormat: 'detail');
+
+    expect($request->resolveResponseClass())->toBeNull();
 });
 
 test('UpdateProduct is PATCH with id and body', function (): void {

@@ -27,12 +27,12 @@ class UpdateCustomField extends Request implements HasBody
 
     /**
      * @param  string  $id  Identifier for the custom_field
-     * @param  null|string  $response  Data format for response. Empty if none is provided.
+     * @param  null|string  $responseFormat  Data format for response. Empty if none is provided.
      */
     public function __construct(
         protected string $id,
         protected array $data,
-        protected ?string $response = null,
+        protected ?string $responseFormat = null,
     ) {}
 
     public function defaultBody(): array
@@ -42,7 +42,7 @@ class UpdateCustomField extends Request implements HasBody
 
     public function defaultQuery(): array
     {
-        return array_filter(['_response' => $this->response]);
+        return array_filter(['_response' => $this->responseFormat]);
     }
 
     public function createDtoFromResponse(Response $response): mixed
