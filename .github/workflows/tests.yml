@@ -2,8 +2,10 @@ name: Tests
 
 on:
   push:
+    paths-ignore: ['**.md', 'docs/**', 'LICENSE']
     branches: [main]
   pull_request:
+    paths-ignore: ['**.md', 'docs/**', 'LICENSE']
     branches: [main]
 
 concurrency:
