@@ -17,7 +17,7 @@ use TeamNiftyGmbH\Shopware\Requests\Tax\GetTaxList;
 use TeamNiftyGmbH\Shopware\Shopware;
 use TeamNiftyGmbH\Shopware\Support\CriteriaBuilder;
 
-function fixture(string $name): array
+function jsonFixture(string $name): array
 {
     return json_decode(
         file_get_contents(__DIR__.'/../Fixtures/'.$name.'.json'),
@@ -43,7 +43,7 @@ function mockShopware(array $mocks): Shopware
 
 test('can list products', function (): void {
     $shopware = mockShopware([
-        GetProductList::class => MockResponse::make(fixture('product-list'), 200),
+        GetProductList::class => MockResponse::make(jsonFixture('product-list'), 200),
     ]);
 
     $response = $shopware->product()->getProductList(limit: 5);
@@ -56,7 +56,7 @@ test('can list products', function (): void {
 // --- Product Detail (JSON:API format) ---
 
 test('can get a single product', function (): void {
-    $fixture = fixture('product-detail');
+    $fixture = jsonFixture('product-detail');
     $shopware = mockShopware([
         GetProduct::class => MockResponse::make($fixture, 200),
     ]);
@@ -73,7 +73,7 @@ test('can get a single product', function (): void {
 // --- Product Create ---
 
 test('can create a product', function (): void {
-    $fixture = fixture('product-created');
+    $fixture = jsonFixture('product-created');
     $shopware = mockShopware([
         CreateProduct::class => MockResponse::make($fixture, 200),
     ]);
@@ -126,7 +126,7 @@ test('can delete a product', function (): void {
 
 test('get returns 404 for non-existent product', function (): void {
     $shopware = mockShopware([
-        GetProduct::class => MockResponse::make(fixture('product-404'), 404),
+        GetProduct::class => MockResponse::make(jsonFixture('product-404'), 404),
     ]);
 
     $response = $shopware->product()->getProduct('00000000000000000000000000000000');
@@ -139,7 +139,7 @@ test('get returns 404 for non-existent product', function (): void {
 
 test('can search products with criteria', function (): void {
     $shopware = mockShopware([
-        SearchProduct::class => MockResponse::make(fixture('product-search'), 200),
+        SearchProduct::class => MockResponse::make(jsonFixture('product-search'), 200),
     ]);
 
     $criteria = CriteriaBuilder::make()
@@ -161,7 +161,7 @@ test('can search products with criteria', function (): void {
 
 test('can aggregate products', function (): void {
     $shopware = mockShopware([
-        AggregateProduct::class => MockResponse::make(fixture('product-aggregation'), 200),
+        AggregateProduct::class => MockResponse::make(jsonFixture('product-aggregation'), 200),
     ]);
 
     $criteria = CriteriaBuilder::make()
@@ -180,7 +180,7 @@ test('can aggregate products', function (): void {
 
 test('product list has JSON:API structure', function (): void {
     $shopware = mockShopware([
-        GetProductList::class => MockResponse::make(fixture('product-list'), 200),
+        GetProductList::class => MockResponse::make(jsonFixture('product-list'), 200),
     ]);
 
     $response = $shopware->product()->getProductList();
@@ -193,7 +193,7 @@ test('product list has JSON:API structure', function (): void {
 
 test('product detail has JSON:API structure', function (): void {
     $shopware = mockShopware([
-        GetProduct::class => MockResponse::make(fixture('product-detail'), 200),
+        GetProduct::class => MockResponse::make(jsonFixture('product-detail'), 200),
     ]);
 
     $response = $shopware->product()->getProduct('test');
@@ -207,7 +207,7 @@ test('product detail has JSON:API structure', function (): void {
 
 test('can list categories', function (): void {
     $shopware = mockShopware([
-        GetCategoryList::class => MockResponse::make(fixture('category-list'), 200),
+        GetCategoryList::class => MockResponse::make(jsonFixture('category-list'), 200),
     ]);
 
     $response = $shopware->category()->getCategoryList(limit: 25);
@@ -219,7 +219,7 @@ test('can list categories', function (): void {
 
 test('can search categories', function (): void {
     $shopware = mockShopware([
-        SearchCategory::class => MockResponse::make(fixture('category-list'), 200),
+        SearchCategory::class => MockResponse::make(jsonFixture('category-list'), 200),
     ]);
 
     $response = $shopware->category()->searchCategory(['limit' => 5]);
@@ -231,7 +231,7 @@ test('can search categories', function (): void {
 
 test('can list taxes', function (): void {
     $shopware = mockShopware([
-        GetTaxList::class => MockResponse::make(fixture('tax-list'), 200),
+        GetTaxList::class => MockResponse::make(jsonFixture('tax-list'), 200),
     ]);
 
     $response = $shopware->tax()->getTaxList(limit: 10);
@@ -242,7 +242,7 @@ test('can list taxes', function (): void {
 });
 
 test('can get single tax', function (): void {
-    $fixture = fixture('tax-detail');
+    $fixture = jsonFixture('tax-detail');
     $shopware = mockShopware([
         GetTax::class => MockResponse::make($fixture, 200),
     ]);
@@ -262,8 +262,8 @@ test('can paginate through results', function (): void {
     $request = new class(limit: 2) extends GetCategoryList implements Paginatable {};
 
     $shopware = mockShopware([
-        MockResponse::make(fixture('category-list-paginated'), 200),
-        MockResponse::make(fixture('category-list-page2'), 200),
+        MockResponse::make(jsonFixture('category-list-paginated'), 200),
+        MockResponse::make(jsonFixture('category-list-page2'), 200),
     ]);
 
     $paginator = $shopware->paginate($request);
